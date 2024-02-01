@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles_index.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Favicon  -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>银发候鸟 Web 官网</title>
+</head>
+<body>
+ <noscript>
+    <div class="alert-js">
+        <p>啊哦，<code> JavaScript </code>似乎无法正常使用。请尝试打开<code> JavaScript </code>以获得最佳体验！</p>
+    </div>
+</noscript>
+  <script src="ismobile.js"></script>
+  <div class="logo">
+    <h1>银发候鸟<span class="slogan"> | 智慧康养 健康旅居</span></h1>
+    <span></span>
+    <a href="login.html" class="login-btn">登录</a>|
+    <a href="reg.html" class="register-btn">注册</a>
+  </div>
+
+  <div class="nav">
+    <span></span>
+    <a href="index.html" class="active">网站首页</a>
+    <a href="about.html">公司简介</a>
+    <a href="news.html">最新资讯</a>
+    <a href="institution.html">康养机构</a>
+    <a href="res.html">红色资源</a>
+    <a href="coop.html">合作咨询</a>
+  </div>
+  <div class="MaxBox">
+    <div class="box">
+      <img src="2018.png" alt="">
+      <p class="review">书中自有黄金屋，书中自有颜如玉</p>
+      <p class="appraise">来自112879493的评价</p>
+      <div class="info">
+          <h4><a href="#">Remid.ani 哈酒...</a></h4><em>|</em><span>999.99元</span>
+      </div>    </div>
+  <div class="slideshow">
+    <!-- 第一张图 -->
+    <div class="slide active">
+        <img src="image1.jpg" alt="Image 1">
+    </div>
+    <!-- 第二张图 -->
+    <div class="slide">
+        <img src="image2.jpg" alt="Image 2">
+    </div>
+    <!-- 第三张图 -->
+    <div class="slide">
+        <img src="image3.jpg" alt="Image 3">
+    </div>
+  </div>
+</div>
+  <h2>News</h2>
+  <h2>Manage</h2>
+  <script>
+   // 获取当前页面的URL
+  var currentUrl = window.location.href;
+  // 获取所有导航链接元素
+  var navLinks = document.querySelectorAll('nav a');
+  
+  // 遍历导航链接，检查它们的href属性是否与当前页面的URL匹配
+  for (var i = 0; i < navLinks.length; i++) {
+    if (navLinks[i].href === currentUrl) {
+      // 如果匹配，将该导航链接添加"active"类
+      navLinks[i].classList.add('active');
+    }
+  }
+    isDesktop();
+    // JavaScript代码可选，用于控制切换轮播图
+    var slides = document.getElementsByClassName("slide");
+    var currentSlideIndex = 0;
+    
+    function showNextSlide() {
+        slides[currentSlideIndex].classList.remove("active");
+        
+        if (++currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+        }
+        
+        slides[currentSlideIndex].classList.add("active");
+    }
+    
+    setInterval(showNextSlide, 4000); // 每4秒切换到下一张图
+</script>
+</body>
+</html>
