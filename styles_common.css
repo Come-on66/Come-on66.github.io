@@ -1,0 +1,24 @@
+.slideshow {
+    width: 100%; /* 设置容器宽度 */
+    height: 850px; /* 高度自适应内容 */
+    position: relative; /* 相对定位，为了后面的子元素绝对定位 */
+    overflow: hidden; /* 超出部分隐藏 */
+}
+
+.slide {
+    display: none; /* 初始状态都不显示 */
+    position: absolute; /* 绝对定位，使其在容器中移动 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 每张图片占据全屏宽度 */
+    transition: transform 0.5s ease-in-out; /* 添加过渡效果 */
+}
+
+.slide img {
+    width: 100%; /* 图片充满容器宽度 */
+    height: auto; /* 保持比例 */
+}
+
+.active {
+    display: block; /* 当前展示的图片显示 */
+}

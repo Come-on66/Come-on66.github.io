@@ -1,117 +1,93 @@
 h1 {
-    color: #9F2C15;
-    font-size: 30px;
-    font-weight: 700;
-    background-image: url(logo.png);
-    background-repeat: no-repeat;
-    background-position: 20px 5px;
-    text-indent: 2em;
-    display: inline-block;
-  }
-  
+  color: #9F2C15;
+  font-size: 30px;
+  font-weight: 700;
+  background-image: url(logo.png);
+  background-repeat: no-repeat;
+  background-position: 20px 5px;
+  text-indent: 2em;
+  display: inline-block;
+}
+
+.nav {
+  height: 41px;
+  border-top: 3px solid #9F2C15;
+  border-bottom: 1px solid #edeef0;
+  background-color: #fcfcfc;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.nav-container {
+  overflow-x: auto;
+}
+.nav a.active {
+  background-color: #9F2C15; /* 设置背景颜色为红色 */
+  color: #fff; /* 设置文本颜色为白色 */
+}
+.nav a {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 12px;
+  color: #4c4c4c;
+  text-decoration: none;
+  margin:0 45px;
+}
+@media (max-width: 1050px) {
   .nav {
-    height: 41px;
-    border-top: 3px solid #9F2C15;
-    border-bottom: 1px solid #edeef0;
-    background-color: #fcfcfc;
-    line-height: 41px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
+    justify-content: flex-start;
   }
-  .nav-container {
-    overflow-x: auto;
-  }
-  .nav a.active {
-    background-color: #9F2C15; /* 设置背景颜色为红色 */
-    color: #fff; /* 设置文本颜色为白色 */
-  }
-  .nav a {
-    display: inline-block;
-    padding: 0 20px;
-    font-size: 12px;
-    color: #4c4c4c;
-    text-decoration: none;
-    margin:0 45px;
-  }
-  @media (max-width: 1050px) {
-    .nav {
-      justify-content: flex-start;
-    }
-  }
+}
 
-  .nav a:hover {
-    color: #9F2C15;
-    background-color: #e0c2c2;
-  }
-  
-  .logo {
-    height: 70px;
-    background-color: #fcfcfc;
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo a {
-    display: inline-block;
-    padding: 0 5px;
-    font-size: 12px;
-    color: #4c4c4c;
-    text-decoration: none;
-  }
-  
-  .logo a:hover {
-    color: #9F2C15;
-    background-color: #c4c1c1;
-  }
-  
-  .logo span {
-    flex-grow: 1;
-  }
-  
-  .login-btn,
-  .register-btn {
-    display: inline-block;
-    padding: 0 10px;
-    font-size: 12px;
-    color: #4c4c4c;
-    text-decoration: none;
-  }
-  
-  .one {
-    width: 200px;
-    height: 360px;
-    background-color: pink;
-    margin: 30px;
-  }
+.nav a:hover {
+  color: #9F2C15;
+  background-color: #e0c2c2;
+}
 
-  @media (max-width: 600px) {
-    .slogan {
-      display: none;
-    }
+.logo {
+  height: 70px;
+  background-color: #fcfcfc;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 12px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #9F2C15;
+  background-color: #c4c1c1;
+}
+
+.logo span {
+  flex-grow: 1;
+}
+
+.login-btn,
+.register-btn {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+
+.one {
+  width: 200px;
+  height: 360px;
+  background-color: pink;
+  margin: 30px;
+}
+
+@media (max-width: 600px) {
+  .slogan {
+    display: none;
   }
-    .slideshow {
-            width: 100%; /* 设置容器宽度 */
-            height: 850px; /* 高度自适应内容 */
-            position: relative; /* 相对定位，为了后面的子元素绝对定位 */
-            overflow: hidden; /* 超出部分隐藏 */
-        }
-        
-        .slide {
-            display: none; /* 初始状态都不显示 */
-            position: absolute; /* 绝对定位，使其在容器中移动 */
-            top: 0;
-            left: 0;
-            width: 100%; /* 每张图片占据全屏宽度 */
-            transition: transform 0.5s ease-in-out; /* 添加过渡效果 */
-        }
-        
-        .slide img {
-            width: 100%; /* 图片充满容器宽度 */
-            height: auto; /* 保持比例 */
-        }
-        
-        .active {
-            display: block; /* 当前展示的图片显示 */
-        }
+}
