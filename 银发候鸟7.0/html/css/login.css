@@ -1,0 +1,51 @@
+body{
+    /* background-image:url(https://www.yangshangzhen.com/bing/wallpaper);*/
+
+    background-image: linear-gradient(120deg, #ddb7b9 0%, #770028 100%);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    margin:0;
+    padding:0;
+    overflow:auto;
+    user-select: none;
+    -ms-user-select: none;
+    
+}
+.form{
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.input-un{
+    width:200px;
+    margin:0 auto;
+}
+
+.footinf{
+    font-family: 'HarmonyOS Sans SC Medium';
+    text-align: center;
+    font-size:12px;
+    line-height: 20px;
+    z-index:1000 ;
+    margin-top:450px;
+  }
+
+@font-face {
+    font-family: 'HarmonyOS Sans SC Medium';
+    src: url('../res/HarmonyOS_Sans_SC_Medium.eot');
+    src: url('../res/HarmonyOS_Sans_SC_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../res/HarmonyOS_Sans_SC_Medium.woff2') format('woff2'), /* modern browsers */
+    url('../res/HarmonyOS_Sans_SC_Medium.woff') format('woff'), /* modern browsers */
+    url('../res/HarmonyOS_Sans_SC_Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: medium;
+    font-style: normal;
+    }

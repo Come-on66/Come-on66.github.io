@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles_common.css">
+  <!-- Favicon  -->
+  <link rel="shortcut icon" href="./res/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>银发候鸟 Web 官网</title>
+</head>
+<body>
+	<!--[if IE]> <meta http-equiv="refresh" content="1;url=forIEusers.html"> <![endif]-->
+  <script src="./js/ismobile.js"></script>
+  <div class="upper">
+  <div class="logo">
+    <h1>银发候鸟<span class="slogan"> | 智慧康养 健康旅居</span></h1>
+    <span></span>
+    <a href="login.html" class="login-btn">登录</a>|
+    <a href="reg.html" class="register-btn">注册</a>
+  </div>
+
+  <div class="nav">
+    <span></span>
+    <a href="index.html">网站首页</a>
+    <a href="about.html">公司简介</a>
+    <a href="news.html">最新资讯</a>
+    <a href="institution.html">康养机构</a>
+    <a href="res.html" class="active">红色资源</a>
+    <a href="coop.html">合作咨询</a>
+  </div>
+  </div>
+  <div class="slideshow">
+    <!-- 第一张图 -->
+    Hello,World!
+    <div class="slide active">
+        <img src="./res/image1.jpg" alt="Image 1">
+    </div>
+    <!-- 第二张图 -->
+    <div class="slide">
+        <img src="./res/image2.jpg" alt="Image 2">
+    </div>
+    <!-- 第三张图 -->
+    <div class="slide">
+        <img src="./res/image3.jpg" alt="Image 3">
+    </div>
+</div>
+  <h2>现有资源</h2>
+  <h2>合作实例</h2>
+  <h2>加入我们</h2>
+  <script>
+    isDesktop();
+	
+    // JavaScript代码可选，用于控制切换轮播图
+    var slides = document.getElementsByClassName("slide");
+    var currentSlideIndex = 0;
+    
+    function showNextSlide() {
+        slides[currentSlideIndex].classList.remove("active");
+        
+        if (++currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+        }
+        
+        slides[currentSlideIndex].classList.add("active");
+    }
+    
+    setInterval(showNextSlide, 4000); // 每4秒切换到下一张图
+</script>
+<footer>
+  <p class="footinf">
+  银发候鸟 (c) 2024 | 预留备案信息 <br>网站源码采用木兰 MulanPSL2 授权<br>这意味着您可以修改、分发该源码，但不享有商标许可
+  </p>
+</footer>
+</body>
+</html>

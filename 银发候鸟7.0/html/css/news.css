@@ -1,0 +1,117 @@
+.middle-picture{
+    height:250px;
+    background-color: pink;
+}
+.middlebox{
+    width: 1500px;
+    height: 1200px;
+    margin:20px auto;
+    border-top: #050505;
+}
+.middlebox div{
+    display: inline-block;
+    
+}
+.middlebox-first{
+    float:left;
+    height:1200px;
+    width: 400px;
+    background-color: #fff;
+    vertical-align: top;
+    
+}
+.middlebox-second{
+    
+    height:1200px;
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color: aqua; */
+}
+.middlebox-third{
+    vertical-align: top;
+    margin-top:-1200px;
+    margin-left:1350px;
+    height:1200px;
+    width: 300px;
+    display: inline-block;
+    /* background-color: blue; */
+}
+li{
+    list-style: none;
+    overflow: hidden;
+    /* float:left; */
+}
+.middlebox-second>ul>li{
+    width: 700px;
+    height: 270px;
+    padding:30px 50px 0px; 
+    border-bottom: #bfbfbf;
+}
+.middlebox-second>ul>li>img{
+    margin-top: 14px;
+    margin-right: 50px;
+}
+.news-picture{
+    width: 250px;
+    height: 150px;
+    background-image: url(../res/logo5.png);
+    background-color: aqua;
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+
+.words{
+    margin-left:50px;
+    height:150px;
+    width:auto;
+    padding-top: 20px;
+    overflow: hidden;
+    /* margin-top: 50px; */
+    /* margin-right: 0; */
+}
+.words a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #05fbfb;
+    margin-right: 30px;
+    margin-left: 300px;
+}
+.words a:hover{
+    color: #9F2C15;
+}
+.leftbanner a{
+    color: #9F2C15;
+    text-decoration: none;
+  }
+  .leftbanner{
+    width:250px;
+    display: inline-block;
+    margin-left: 10px;
+
+    
+  }
+  
+  .leftbanner ul{
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  .mdui-textfield  .li {
+    display: block;
+    /* text-align: -webkit-match-parent; */
+    text-indent: 2em;
+    /* margin:20px; */
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.middlebox-third ul li{
+    /* display: inline-block; */
+    width:100px;
+    height: 300px;
+    background-color: rgb(90, 216, 216);
+}
+*{
+    font-family: 'HarmonyOS Sans SC Medium';
+}
