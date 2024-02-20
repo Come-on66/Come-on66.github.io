@@ -1,0 +1,130 @@
+.bigpicture{
+    background-image: url(../res/bighorse.png);
+    overflow: hidden;
+    height: 700px;
+    border-radius: 0 0 2% 2%;
+    box-shadow: 0 2px 5px 5px rgba(0,0,0,0.2);
+}
+.w{
+    margin:0;
+    width: 1200px;
+    margin:auto;
+    
+  }   
+.small_title{
+    background-color: rgba(0, 0, 0, 0.4);
+    /* float: right; */
+    width: 320px;
+    height: 100px;
+    /* margin: 0; */
+    margin-top: 420px;
+    margin-left: 300px;
+    text-align: center;
+    border-radius: 5%;
+    overflow: hidden;
+    color: #fff;
+    user-select: none;
+    -ms-user-select: none;
+}
+.bigpicture .small_title h3{
+    margin-top: 10px;
+}
+.middle_info .two_title{
+    text-align: center;
+    color: black;
+    margin-bottom: 100px;
+}
+li{
+    list-style: none;
+}
+.middle_info{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.middle_info ul li{
+    float: left;
+    width: 230px;
+    height: 350px;
+    margin-right: 15px;
+    background-color:#fff;
+    box-shadow: 0 2px 3px 3px rgba(0,0,0,0.1);
+    border-radius: 0 0 5% 5%;
+}
+img{
+    width: 100%;
+    height: 150px;
+}
+.middle_info ul{
+    width: 1225px;
+    margin: 0 auto;
+}
+.first{
+    margin-left:242px ;
+}
+.last{
+    margin-right: 117.5px;
+}
+.middle_info ul li a{
+    display: block;
+    /* padding-left: 5px; */
+    width: 230px;
+    height: 200px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+.cont{
+line-height:20px;
+}
+.middle_info ul li a:hover{
+    color: #9F2C15;
+}
+.final_info {
+  overflow: hidden;
+  user-select: none;
+  -ms-user-select: none;
+}
+.right_box{
+    user-select: none;
+    -ms-user-select: none;
+    float: right;
+    width: 575px; 
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 150px 89px;
+    margin-top: -50px;
+    color: #fff;
+}
+.right_box h4{
+    font-size:20px;
+}
+.final_info h2{
+    text-align: center;
+    /* font-size: 16px; */
+}
+.final_info .subtitle p{
+    text-align: center;
+}
+.final_info .three_info{
+
+    background-image: url(../res/sea.png);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    height: 600px;
+}
+.goal p{
+    line-height: 25px;
+}
+.three_info p{
+    text-indent: 2em;
+    font-size:14px ;
+}
+
+.endtitle, .two_title, .small_title, .goal, .right_box, .piles{
+    font-family:'HarmonyOS Sans SC Medium';
+    user-select: none;
+    -ms-user-select: none;
+}
