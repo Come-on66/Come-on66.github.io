@@ -3,7 +3,7 @@
 <head>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/styles_common.css">
+  <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
   <link rel="stylesheet" href="./css/about.css">
   <!-- Favicon  -->
   <link rel="shortcut icon" href="./res/favicon.ico">
@@ -24,8 +24,11 @@
         margin:0 25px;
       }
     </style>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=nojs.html">
+    </noscript>
 </head>
-<body>
+<body class="mdui-theme-accent-red">
 	<!--[if IE]> <meta http-equiv="refresh" content="1;url=forIEusers.html"> <![endif]-->
   <script src="./js/ismobile.js"></script>
   <div class="upper">
@@ -35,7 +38,7 @@
     <a href="login.html" class="login-btn">登录</a>|
     <a href="reg.html" class="register-btn">注册</a>
   </div>
-  <div class="nav">
+  <div class="nav mdui-ripple">
     <span></span>
     <a href="index.html">网站首页</a>
     <a href="about.html" class="active">公司简介</a>
@@ -86,13 +89,52 @@
     </div>
   </div>
 </div>
-<div class="introduction">
-  <!-- <h2>关于我们 About Us</h2>
-  <p>银发候鸟是一个致力于为老年人提供康养旅居服务的产品。我们秉持着“智慧康养健康旅居“的理念，让老年人用起来安心放心。</p>--></div>
+<button type="button" class="mdui-fab mdui-color-theme-accent mdui-fab-fixed mdui-ripple" id="go_top">
+  <i class="mdui-icon material-icons">&#xe5d8;</i>
+</button>
 <footer>
   <p class="footinf">
   银发候鸟 (c) 2024 | 预留备案信息 <br>网站源码采用木兰 MulanPSL2 授权<br>这意味着您可以修改、分发该源码，但不享有商标许可
   </p>
 </footer>
+<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+<script src="https://cdn.bootcss.com/babel-polyfill/7.6.0/polyfill.js"></script>
+<script>
+  var button = document.getElementById("go_top");
+    function handleClick() {
+      window.scrollTo(0, 0);
+    }
+// 将点击事件与处理函数关联起来
+button.addEventListener('click', handleClick);
+  function Detect_IE() {
+      var ua = window.navigator.userAgent;
+         
+           var msie = ua.indexOf('MSIE ');
+           if (msie > 0) {
+            
+             return "IE " + parseInt( ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+           }
+         
+           var trident = ua.indexOf('Trident/');
+           if (trident > 0) {
+            
+             var rv = ua.indexOf('rv:');
+             return "IE " + parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+           }
+
+           // other browser
+           return "false";
+         }
+         var result=Detect_IE();
+         if (result=="!false")
+         
+         {
+          window.location.href="forIEusers_higher.html"
+          
+         }
+         try{
+         isDesktop();}
+         catch(error){}
+</script>
 </body>
 </html>

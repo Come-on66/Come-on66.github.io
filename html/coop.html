@@ -3,7 +3,7 @@
 <head>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/styles_common.css">
+  <link rel="stylesheet" href="./css/coop.css">
    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
   <!-- Favicon  -->
   <link rel="shortcut icon" href="./res/favicon.ico">
@@ -19,19 +19,22 @@
       -ms-user-select: none;
     }
   </style>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=nojs.html">
+  </noscript>
 </head>
-<body>
+<body class="mdui-theme-accent-red">
 	<!--[if IE]> <meta http-equiv="refresh" content="1;url=forIEusers.html"> <![endif]-->
   <script src="./js/ismobile.js"></script>
   <div class="upper">
   <div class="logo">
     <h1>银发候鸟<span class="slogan"> | 智慧康养 健康旅居</span></h1>
     <span></span>
-    <a href="login.html" class="login-btn">登录</a>|
-    <a href="reg.html" class="register-btn">注册</a>
+    <a href="login.html" class="login-btn mdui-ripple">登录</a>|
+    <a href="reg.html" class="register-btn mdui-ripple">注册</a>
   </div>
 
-  <div class="nav">
+  <div class="nav mdui-ripple">
     <span></span>
     <a href="index.html">网站首页</a>
     <a href="about.html">公司简介</a>
@@ -40,45 +43,34 @@
     <a href="res.html">红色资源</a>
     <a href="coop.html" class="active">合作咨询</a>
   </div></div>
-  <div class="slideshow">
-    <!-- 第一张图 -->
-
-    <div class="slide active">
-        <img src="./res/image1.jpg" alt="Image 1">
-    </div>
-    <!-- 第二张图 -->
-    <div class="slide">
-        <img src="./res/image2.jpg" alt="Image 2">
-    </div>
-    <!-- 第三张图 -->
-    <div class="slide">
-        <img src="./res/image3.jpg" alt="Image 3">
+  <div class="bigpicture w">
+    <div class="small_title">
+      <h2>合作咨询</h2><br>
+      <h3>Cooperate</h3>
     </div>
 </div>
-<div class="coopbox">
+<div class="coopbox"><br>
+  <div coopbox-header>
   <h2>加入我们</h2><br>
-  <p>想要合作咨询吗？请您留下您的联系方式:</p>
+  <p>想要合作咨询吗？请您留下您的联系方式:</p><br><br></div>
+  <div class="entirebox">
+  <div class="mdui-card mdui-card-go">
+    <div class="mdui-card-header">
+      <img class="mdui-card-header-avatar" alt="" src="./res/logo.png">
+      <div class="mdui-card-header-title">联系方式</div>
+      <div class="mdui-card-header-subtitle">Contact</div>
+    </div><div class="mdui-card-media">
+      <img alt="" src="./res/coop_crop.jpg"></div>
+<div class="survey">
   <div class="mdui-textfield mdui-textfield-floating-label">
 
     <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名</label>
     <i class="mdui-icon material-icons"></i>
     <input class="mdui-textfield-input" type="text">
 </div>
-<div class="mdui-textfield mdui-textfield-floating-label">
 
-  <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱</label>
-  <i class="mdui-icon material-icons">&#xe0be;</i>
-  <input class="mdui-textfield-input" type="text">
-</div>
-<!-- 下面的省市区和项目的文本框需要换成下拉框 -->
-<!-- <div class="mdui-textfield mdui-textfield-floating-label"> -->
-
-  <!-- <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;省</label> -->
-  <!-- <i class="mdui-icon material-icons">&#xe1b3;</i> -->
-  <!-- <input class="mdui-textfield-input" type="text"> -->
-<!-- </div> -->
-<!-- 省 -->
-<br>&nbsp;<i class="mdui-icon material-icons">&#xe1b3;</i>
+<div class="location">
+<br><br>&nbsp;<i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe1b3;</i>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select class="mdui-select" mdui-select>
   <option value="1" selected>省</option>
   <option value="2">北京</option>
@@ -116,13 +108,8 @@
   <option value="34">台湾</option>
 </select>
 
-<!-- <div class="mdui-textfield mdui-textfield-floating-label"> -->
 
-  <!-- <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</label> -->
-  <!-- <i class="mdui-icon material-icons">&#xe1b3;</i> -->
-  <!-- <input class="mdui-textfield-input" type="text"> -->
-<!-- </div> -->
-<select class="mdui-select" mdui-select>
+<select class="mdui-select"  mdui-select>
   <option value="1" selected>市</option>
   <option value="2">贵阳</option>
   <option value="3">遵义</option>
@@ -134,13 +121,8 @@
   <option value="9">黔南</option>
   <option value="10">黔西南</option>
 </select>
-<!-- <div class="mdui-textfield mdui-textfield-floating-label"> -->
 
-  <!-- <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</label> -->
-  <!-- <i class="mdui-icon material-icons">&#xe1b3;</i> -->
-  <!-- <input class="mdui-textfield-input" type="text"> -->
-<!-- </div> -->
-<select class="mdui-select" mdui-select>
+<select class="mdui-select"  mdui-select>
   <option value="1" selected>区</option>
   <option value="2">七星关区</option>
   <option value="3">赫章县</option>
@@ -150,16 +132,9 @@
   <option value="7">黔西市</option>
   <option value="8">金沙县</option>
   <option value="9">大方县</option>
-</select>
+</select></div><div class="sub">
 <br>
-<!-- <div class="mdui-textfield mdui-textfield-floating-label"> -->
-
-  <!-- <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目</label> -->
-  <!-- <i class="mdui-icon material-icons">&#xe53f;</i> -->
-  <!-- <input class="mdui-textfield-input" type="text"> -->
-<!-- </div> -->
-<br>
-<br>&nbsp;<i class="mdui-icon material-icons">&#xe53f;</i>
+<br>&nbsp;<i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe53f;</i>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select class="mdui-select" mdui-select>
   <option value="1" selected>项目</option>
   <option value="2">项目1</option>
@@ -171,38 +146,95 @@
   <option value="8">项目7</option>
   <option value="9">项目8</option>
 </select>
+<br><br><br>&nbsp;<i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe241;</i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select class="mdui-select" mdui-select>
+  <option value="1" selected>合作类型</option>
+  <option value="2">养老院</option>
+  <option value="3">红色基地</option>
+  <option value="4">合作公司</option>
+  <option value="5">其他（请在备注中说明）</option>
+</select></div>
 <div class="mdui-textfield mdui-textfield-floating-label">
 
-  <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他备注说明</label>
-  <i class="mdui-icon material-icons">&#xe3c9;</i>
+  <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱</label>
+  <i class="mdui-icon material-icons">&#xe0be;</i>
   <input class="mdui-textfield-input" type="text">
-</div><br>
-<button type="button" class="mdui-btn mdui-btn-raised mdui-ripple mdui-center" href="index.html">提交</button>
 </div>
-  <script>
-    isDesktop();
-	
-    // JavaScript代码可选，用于控制切换轮播图
-    var slides = document.getElementsByClassName("slide");
-    var currentSlideIndex = 0;
-    
-    function showNextSlide() {
-        slides[currentSlideIndex].classList.remove("active");
-        
-        if (++currentSlideIndex >= slides.length) {
-            currentSlideIndex = 0;
-        }
-        
-        slides[currentSlideIndex].classList.add("active");
-    }
-    
-    setInterval(showNextSlide, 4000); // 每4秒切换到下一张图
-</script>
-<footer>
-  <p class="footinf">
-  银发候鸟 (c) 2024 | 预留备案信息 <br>网站源码采用木兰 MulanPSL2 授权<br>这意味着您可以修改、分发该源码，但不享有商标许可
-  </p>
-</footer>
+<div class="mdui-textfield mdui-textfield-floating-label">
+
+  <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备注</label>
+  <i class="mdui-icon material-icons">&#xe3c9;</i>
+  <textarea class="mdui-textfield-input" type="text"></textarea>
+</div><br><br><br></div>
+<button type="button" class="mdui-btn mdui-btn-raised mdui-ripple mdui-center mdui-color-theme-accent" id="submit">提交</button><br><br>
+</div></div></div><br><br>
+
+
+<button type="button" class="mdui-fab mdui-color-theme-accent mdui-fab-fixed mdui-ripple" id="go_top">
+  <i class="mdui-icon material-icons">&#xe5d8;</i>
+</button>
 <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+<script src="https://cdn.bootcss.com/babel-polyfill/7.6.0/polyfill.js"></script>
+  <script>
+    var button = document.getElementById("submit");
+    function handleClick() {
+    mdui.snackbar({message:"已提交，非常感谢您的参与！", position:'top',})
+}
+ 
+// 将点击事件与处理函数关联起来
+button.addEventListener('click', handleClick);
+var button = document.getElementById("go_top");
+    function handleClick_top() {
+      window.scrollTo(0, 0);
+    }
+// 将点击事件与处理函数关联起来
+button.addEventListener('click', handleClick_top);
+    function Detect_IE() {
+      var ua = window.navigator.userAgent;
+         
+           var msie = ua.indexOf('MSIE ');
+           if (msie > 0) {
+            
+             return "IE " + parseInt( ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+           }
+         
+           var trident = ua.indexOf('Trident/');
+           if (trident > 0) {
+            
+             var rv = ua.indexOf('rv:');
+             return "IE " + parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+           }
+
+           // other browser
+           return "false";
+         }
+         var result=Detect_IE();
+         if (result=="!false")
+         
+         {
+          window.location.href="forIEusers_higher.html"
+          
+         }
+         try{
+         isDesktop();}
+         catch(error){}
+</script>
+<br>
+<div class="endline"><br><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加入我们</h2>
+  <div class="contact">
+    <br>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式 Contacts</h3>
+    <ul>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话: XXX-XXX-XXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="coop.html">合作咨询</a></li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱: xxx@xx.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.gitee.com/benjaminp/yinfa-migrant/">Gitee 仓库</a></li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址: 湖北省武汉市武昌区友谊大道&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://j.map.baidu.com/2e/oGic">百度地图</a></li>
+    </ul>
+   </div>
+   <footer>
+    <p class="footinf">
+    银发候鸟 (c) 2024 | 预留备案信息 <br>网站源码采用木兰 MulanPSL2 授权<br>这意味着您可以修改、分发该源码，但不享有商标许可
+    </p>
+  </footer></div>
+
 </body>
 </html>

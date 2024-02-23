@@ -3,17 +3,23 @@
 <head>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/styles_common.css">
+  <link rel="stylesheet" href="./css/styles_slider_former.css">
+  <link rel="stylesheet" href="./css/institution.css">
+  <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
   <!-- Favicon  -->
   <link rel="shortcut icon" href="./res/favicon.ico">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>银发候鸟 Web 官网</title>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=nojs.html">
+  </noscript>
 </head>
-<body>
+<body class="mdui-theme-accent-red">
 	<!--[if IE]> <meta http-equiv="refresh" content="1;url=forIEusers.html"> <![endif]-->
   <script src="./js/ismobile.js"></script>
+  <script src="https://cdn.bootcss.com/babel-polyfill/7.6.0/polyfill.js"></script>
   <div class="upper">
   <div class="logo">
     <h1>银发候鸟<span class="slogan"> | 智慧康养 健康旅居</span></h1>
@@ -22,7 +28,7 @@
     <a href="reg.html" class="register-btn">注册</a>
   </div>
 
-  <div class="nav">
+  <div class="nav mdui-ripple">
     <span></span>
     <a href="index.html">网站首页</a>
     <a href="about.html">公司简介</a>
@@ -33,23 +39,110 @@
   </div></div>
   <div class="slideshow">
     <!-- 第一张图 -->
-    Hello,World!
-    <div class="slide active">
+    <div class="slide active slide1">
         <img src="./res/image1.jpg" alt="Image 1">
     </div>
     <!-- 第二张图 -->
-    <div class="slide">
+    <div class="slide slide2">
         <img src="./res/image2.jpg" alt="Image 2">
     </div>
     <!-- 第三张图 -->
-    <div class="slide">
+    <div class="slide slide3">
         <img src="./res/image3.jpg" alt="Image 3">
     </div>
 </div>
-  <h2>热门机构</h2>
-  <h2>机构分类</h2>
+<div class="search-sort">
+<div class="textfield-box">
+<div class="mdui-textfield mdui-textfield-floating-label">
+
+  <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;搜索</label>
+  <i class="mdui-icon material-icons">search</i>
+  <input class="mdui-textfield-input" type="text">
+</div><button type="button" class="mdui-btn mdui-btn-icon icon-side mdui-ripple" mdui-menu="{target: '#sort-menu'}" mdui-tooltip="{content: '分类'}"><i class="mdui-icon material-icons">&#xe164;</i></button><ul class="mdui-menu"  id="sort-menu">
+  <li class="mdui-menu-item">
+    <a href="javascript:;" class="mdui-ripple">默认排序</a>
+  </li>
+  <li class="mdui-menu-item" >
+    <a href="javascript:;" class="mdui-ripple">按热度排序</a>
+  </li>
+  <li class="mdui-menu-item">
+    <a href="javascript:;" class="mdui-ripple">按加入时间排序</a>
+  </li>
+  <li class="mdui-divider"></li>
+  <li class="mdui-menu-item">
+    <a href="javascript:;" class="mdui-ripple">升序</a>
+    <a href="javascript:;" class="mdui-ripple">降序</a>
+  </li>
+</ul></div></div>
+<div class="box w"><br>
+  <div class="scoop"><h2>热门机构</h2><br><ul>
+    <li class="mdui-ripple mdui-card"><a href="#"><img src="./res/coop_ins1.webp" dragable="false" alt="sampage"><h3><b>A养老院（红安店）</b></h3></a><div class="rate"><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i>&nbsp;5.0</div></li>
+    <li class="mdui-ripple mdui-card"><a href="#"><img src="./res/coop_ins1.webp" dragable="false" alt="sampage"><h3><b>A养老院（红安店）</b></h3></a><div class="rate"><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i>&nbsp;5.0</div></li>
+    <li class="mdui-ripple mdui-card"><a href="#"><img src="./res/coop_ins1.webp" dragable="false" alt="sampage"><h3><b>A养老院（红安店）</b></h3></a><div class="rate"><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i>&nbsp;5.0</div></li>
+    <li class="mdui-ripple mdui-card"><a href="#"><img src="./res/coop_ins1.webp" dragable="false" alt="sampage"><h3><b>A养老院（红安店）</b></h3></a><div class="rate"><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i><i class="mdui-icon material-icons mdui-text-color-orange">&#xe838;</i>&nbsp;5.0</div></li>
+    <li class="mdui-ripple mdui-card"><a href="#"><img src="./res/background_login.jpg" dragable="false" alt="sampage"><h3><b>更多...</b></h3></a></li>
+  </ul></div>
+  <div class="scoop"><br><br><h2>机构分类</h2><br><ul>
+    <li class="mdui-ripple mdui-card"><a href="#"><img src="./res/coop_ins1.webp" dragable="false" alt="sampage"><h3><b>养老院</b></h3><h4>银发候鸟已与多家养老院展开战略合作...</h4></a></li>
+    <li class="mdui-ripple mdui-card"><a href="#"><img src="./res/bighorse.png" dragable="false" alt="sampage"><h3><b>红色基地</b></h3><h4>目前已有多家红色基地与银发候鸟展开合作...</h4></a></li>
+    <li class="mdui-ripple mdui-card"><a href="#"><img src="./res/coop.jpg" dragable="false" alt="sampage"><h3><b>合作公司</b></h3><h4>银发候鸟非常感谢商业合作公司的支持...</h4></a></li>
+    <li class="mdui-ripple mdui-card"><a href="#"><img src="./res/background_login.jpg" dragable="false" alt="sampage"><h3><b>旅行团</b></h3><h4>银发候鸟将持续发展旗下优秀旅行团体...</h4></a></li>
+    <li class="mdui-ripple mdui-card"><a href="#"><img src="./res/coop.jpg" dragable="false" alt="sampage"><h3><b>其他类型</b></h3><h4>银发候鸟也离不开其他合作项目的支持与合作...</h4></a></li>
+  </ul></div></div>
+  <button type="button" class="mdui-fab mdui-color-theme-accent mdui-fab-fixed mdui-ripple" id="go_top">
+    <i class="mdui-icon material-icons">&#xe5d8;</i>
+  </button>
+  <div class="endline"><br><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加入我们</h2>
+    <div class="contact">
+      <br>
+      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式 Contacts</h3>
+      <ul>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话: XXX-XXX-XXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="coop.html">合作咨询</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱: xxx@xx.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.gitee.com/benjaminp/yinfa-migrant/">Gitee 仓库</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址: 湖北省武汉市武昌区友谊大道&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://j.map.baidu.com/2e/oGic">百度地图</a></li>
+      </ul>
+     </div>
+     <footer>
+      <p class="footinf">
+      银发候鸟 (c) 2024 | 预留备案信息 <br>网站源码采用木兰 MulanPSL2 授权<br>这意味着您可以修改、分发该源码，但不享有商标许可
+      </p>
+    </footer></div><script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
   <script>
-    isDesktop();
+    var button = document.getElementById("go_top");
+    function handleClick() {
+      window.scrollTo(0, 0);
+    }
+// 将点击事件与处理函数关联起来
+button.addEventListener('click', handleClick);
+    function Detect_IE() {
+      var ua = window.navigator.userAgent;
+         
+           var msie = ua.indexOf('MSIE ');
+           if (msie > 0) {
+            
+             return "IE " + parseInt( ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+           }
+         
+           var trident = ua.indexOf('Trident/');
+           if (trident > 0) {
+            
+             var rv = ua.indexOf('rv:');
+             return "IE " + parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+           }
+
+           // other browser
+           return "false";
+         }
+         var result=Detect_IE();
+         if (result=="!false")
+         
+         {
+          window.location.href="forIEusers_higher.html"
+          
+         }
+         try{
+         isDesktop();}
+         catch(error){}
 	
     // JavaScript代码可选，用于控制切换轮播图
     var slides = document.getElementsByClassName("slide");
@@ -67,10 +160,6 @@
     
     setInterval(showNextSlide, 4000); // 每4秒切换到下一张图
 </script>
-<footer>
-  <p class="footinf">
-  银发候鸟 (c) 2024 | 预留备案信息 <br>网站源码采用木兰 MulanPSL2 授权<br>这意味着您可以修改、分发该源码，但不享有商标许可
-  </p>
-</footer>
+
 </body>
 </html>

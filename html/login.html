@@ -80,8 +80,7 @@
             height:40px;
         }
         .sign button{
-            background-color: #6750a4;
-            color:#fff;
+            
             border-radius:20px;
             width:145px;
             height: 40px;
@@ -89,9 +88,12 @@
         }
        
     </style>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=nojs.html">
+      </noscript>
 </head>
 
-<body class="mdui-color-red mdui-text-color-black mdui-theme-accent-deep-purple">
+<body class="mdui-color-red mdui-text-color-black mdui-theme-accent-deep-purple mdui-color-theme-accent">
 <div class="bg2">
         <h2 class="nav2">欢迎来到银发候鸟</h2>
         <img src="./res/logo_large.png" alt="银发候鸟商标" title="银发候鸟商标" width="128">
@@ -108,7 +110,7 @@
                 <input class="mdui-textfield-input" type="password">
             </div>
         <div class="sign">
-            <button type="button" class="mdui-btn mdui-btn-raised mdui-ripple mdui-center" href="index.html">登录</button>
+            <button type="button" class="mdui-btn mdui-btn-raised mdui-ripple mdui-center mdui-color-theme-accent" id="goto_login">登录</button>
     </div>
    若您还没有银发候鸟账号，请<label for="noaccount"> <a href="reg.html" class="singup"><ins>&nbsp;注册</ins></a></label>
       <br>
@@ -119,6 +121,13 @@
       </label>
 </div>
 <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+<script>
+    var button = document.getElementById("goto_login");
+    function handleClick() {
+    window.location.href="index.html";
+}
+button.addEventListener('click', handleClick);
+</script>
 <footer>
     <p class="footinf">
     银发候鸟 (c) 2024 | 预留备案信息 <br>网站源码采用木兰 MulanPSL2 授权<br>这意味着您可以修改、分发该源码，但不享有商标许可

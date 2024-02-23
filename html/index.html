@@ -6,28 +6,27 @@
   <link rel="stylesheet" href="./css/styles.css">
   <!-- Favicon  -->
   <link rel="shortcut icon" href="./res/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>银发候鸟 Web 官网</title>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=nojs.html">
+  </noscript>
 </head>
-<body>
- <noscript>
-    <div class="alert-js">
-        <p>啊哦，<code> JavaScript </code>似乎无法正常使用。请尝试打开<code> JavaScript </code>以获得最佳体验！</p>
-    </div>
-</noscript>
+<body class="mdui-theme-accent-red">
 <!--[if IE]> <meta http-equiv="refresh" content="1;url=forIEusers.html"> <![endif]-->
   <script src="./js/ismobile.js"></script>
   <div class="upper">
   <div class="logo">
     <h1>银发候鸟<span class="slogan"> | 智慧康养 健康旅居</span></h1>
     <span></span>
-    <a href="login.html" class="login-btn">登录</a>|
-    <a href="reg.html" class="register-btn">注册</a>
+    <a href="login.html" class="login-btn mdui-ripple">登录</a>|
+    <a href="reg.html" class="register-btn mdui-ripple">注册</a>
   </div>
 
-  <div class="nav">
+  <div class="nav mdui-ripple">
     <span></span>
     <a href="index.html" class="active">网站首页</a>
     <a href="about.html">公司简介</a>
@@ -42,20 +41,20 @@
   <div class="w ">
       <div class="subnav">
           <ul>
-              <li><a href="#">红色旅游<span>&gt;</span></a></li>
-              <li><a href="#">智能路线<span>&gt;</span></a></li>
-              <li><a href="#">智慧康养<span>&gt;</span></a></li>
-              <li><a href="#">健康旅居<span>&gt;</span></a></li>
-              <li><a href="#">合作案例<span>&gt;</span></a></li>
-              <li><a href="#">解决方案<span>&gt;</span></a></li>
-              <li><a href="#">使用帮助<span>&gt;</span></a></li>
-              <li><a href="#">在线客服<span>&gt;</span></a></li>
-              <li><a href="#">其他事务<span>&gt;</span></a></li>
+              <li class="mdui-ripple"><a href="#">红色旅游<span>&gt;</span></a></li>
+              <li class="mdui-ripple"><a href="#">智能路线<span>&gt;</span></a></li>
+              <li class="mdui-ripple"><a href="#">智慧康养<span>&gt;</span></a></li>
+              <li class="mdui-ripple"><a href="#">健康旅居<span>&gt;</span></a></li>
+              <li class="mdui-ripple"><a href="#">合作案例<span>&gt;</span></a></li>
+              <li class="mdui-ripple"><a href="#">解决方案<span>&gt;</span></a></li>
+              <li class="mdui-ripple"><a href="#">使用帮助<span>&gt;</span></a></li>
+              <li class="mdui-ripple"><a href="#">在线客服<span>&gt;</span></a></li>
+              <li class="mdui-ripple"><a href="#">其他事务<span>&gt;</span></a></li>
           </ul>
       </div>
   </div>
 </div>
- <div class="goods w">
+ <div class="goods w mdui-ripple">
   <h3>快速导航</h3>
   <ul>
       <li><a href="#">精品路线</a><span>|</span></li>
@@ -73,20 +72,32 @@
 <div class="box w">
   <div class="box-hd">
     <br>
-      <h3>精品推荐</h3><a href="#">查看全部</a>
+      <h3>精品推荐</h3><a class="mdui-ripple" href="#">查看全部</a>
 <br>
   </div>
   <div class="box-bd">
   <ul>
-      <li><img src="res/R-C.png" dragable="false" alt="">
+      <li>
+        <em>
+          <img draggable="false" src="res/hot.png" alt="">
+      </em>
+        <img src="res/R-C.png" dragable="false" alt="">
           <h4>红色故都客家摇篮，江西赣州红色景点</h4>
           <div class="info"><span>火热</span> · 1122人已报名</div>
       </li>
-      <li><img src="res/R-.jpg" dragable="false" alt="">
+      <li>
+        <em>
+          <img draggable="false" src="res/hot.png" alt="">
+      </em>
+        <img src="res/R-.jpg" dragable="false" alt="">
           <h4>古田会议</h4>
           <div class="info"><span>火热</span> · 1122人已报名</div>
       </li>
-      <li><img src="res/R-B.png" dragable="false" alt="">
+      <li>
+        <em>
+          <img draggable="false" src="res/hot.png" alt="">
+      </em>
+        <img src="res/R-B.png" dragable="false" alt="">
           <h4>南京地接红色旅游,高淳新四军一支队司令部旧址</h4>
           <div class="info"><span>火热</span> · 952人已报名</div>
       </li>
@@ -153,40 +164,79 @@
     <li><img src="./res/background_login.jpg" dragable="false" alt="sampage"><h4>银发候鸟B端APP开发进展顺利</h4></li>
     <li><img src="./res/background_login.jpg" dragable="false" alt="sampage"><h4>第一届“银发候鸟”产品发布会将在武汉举行</h4></li>
     <li><img src="./res/background_login.jpg" dragable="false" alt="sampage"><h4>网站维护中...</h4></li>
-    <li><img src="./res/background_login.jpg" dragable="false" alt="sampage"><h4>查看更多</h4></li>
+    <li><img src="./res/background_login.jpg" dragable="false" alt="sampage"><h4><a href="news.html">查看更多</a></h4></li>
   </ul></div>
   <br><br>
- <div class="contact">
-  <h3>联系方式 Contacts</h3>
-  <ul>
-    <li>电话: XXX-XXX-XXX</li>
-    <li>邮箱: xxx@xx.com</li>
-    <li>地址: 湖北省武汉市武昌区友谊大道</li>
-  </ul>
- </div></div>
-</div>
-<footer>
-  <p class="footinf">
-  银发候鸟 (c) 2024 | 预留备案信息 <br>网站源码采用木兰 MulanPSL2 授权<br>这意味着您可以修改、分发该源码，但不享有商标许可
-  </p>
-</footer>
+  <button type="button" class="mdui-fab mdui-color-theme-accent mdui-fab-fixed mdui-ripple" id="go_top">
+    <i class="mdui-icon material-icons">&#xe5d8;</i>
+  </button></div></div>
 
+<div class="endline"><br><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加入我们</h2>
+  <div class="contact">
+    <br>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式 Contacts</h3>
+    <ul>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话: XXX-XXX-XXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="coop.html">合作咨询</a></li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱: xxx@xx.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.gitee.com/benjaminp/yinfa-migrant/">Gitee 仓库</a></li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址: 湖北省武汉市武昌区友谊大道&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://j.map.baidu.com/2e/oGic">百度地图</a></li>
+    </ul>
+   </div>
+   <footer>
+    <p class="footinf">
+    银发候鸟 (c) 2024 | 预留备案信息 <br>网站源码采用木兰 MulanPSL2 授权<br>这意味着您可以修改、分发该源码，但不享有商标许可
+    </p>
+  </footer></div>
+<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-polyfill/7.6.0/polyfill.js"></script>
 <script>
-  获取当前页面的URL
+  var button = document.getElementById("go_top");
+    function handleClick() {
+      window.scrollTo(0, 0);
+    }
+// 将点击事件与处理函数关联起来
+button.addEventListener('click', handleClick);
+  function Detect_IE() {
+      var ua = window.navigator.userAgent;
+         
+           var msie = ua.indexOf('MSIE ');
+           if (msie > 0) {
+            
+             return "IE " + parseInt( ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+           }
+         
+           var trident = ua.indexOf('Trident/');
+           if (trident > 0) {
+            
+             var rv = ua.indexOf('rv:');
+             return "IE " + parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+           }
+
+           // other browser
+           return "false";
+         }
+         var result=Detect_IE();
+         if (result!="false")
+         
+         {
+          window.location.href="forIEusers_higher.html"
+         }
+         try{
+         isDesktop();}
+         catch(error){}
+  // 获取当前页面的URL
 var currentUrl = window.location.href;
-获取所有导航链接元素
+//获取所有导航链接元素
 var navLinks = document.querySelectorAll('nav a');
 
-/// 遍历导航链接，检查它们的href属性是否与当前页面的URL匹配
+// 遍历导航链接，检查它们的href属性是否与当前页面的URL匹配
 for (var i = 0; i < navLinks.length; i++) {
   if (navLinks[i].href === currentUrl) {
    // 如果匹配，将该导航链接添加"active"类
     navLinks[i].classList.add('active');
   }
 }
-  isDesktop();
-
-
+  
 </script>
 </body>
 </html>
+

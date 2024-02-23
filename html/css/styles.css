@@ -121,9 +121,11 @@ h1 {
   font-weight: medium;
   font-style: normal;
   }
+
   body{
-    background-color:#F1F5F6;
+    background-color:#F1F5F6  !important;
   }
+
   *{
     padding: 0;
     margin: 0;

@@ -126,3 +126,151 @@ h1 {
     body{
       background-color:#F1F5F6;
     }
+.newsblock .leftbanner{
+  position: sticky;
+  top: 100px;
+  left: 250px;
+  width: 250px;
+  height:700px;
+  display: inline-block;
+  list-style-position: inside;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body{
+  background-color:#F1F5F6  !important;
+}
+.newsblock{
+  display:inline-flex;
+    margin:-500px 150px;
+    font-family: 'HarmonyOS Sans SC Medium';
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.newsblock p{
+    margin:15px 55px;
+    list-style-position:inside;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    justify-content: flex-start;
+    text-align:start;
+  }
+  .newsblock h2{
+    margin:0 25px;
+  }
+  .anews_left li {
+width: 80%;
+display: inline-block;
+height: auto;
+overflow: hidden;
+padding-bottom: 16px;
+padding-top: 35px;
+border-bottom: 1px solid #ffffff;
+
+}
+.newsitem {
+display: flex;
+align-items: center;
+border-bottom: 1px solid #ffffff;
+padding: 10px;
+margin-top:12px;
+margin-left:10px;
+}
+.newsitem a {
+font-weight: bold;
+color: #333;
+text-decoration: none;
+}
+
+.anews_left_y {
+display: flex;
+margin-top: 10px;
+}
+
+.anews_left_left img {
+width:161.59px;
+height:124.89px;
+height: auto;
+}
+.anews_left_left {
+max-width:40%;
+/* width: 300px; */
+
+}
+.anres_left_right {
+margin-left: 400px;
+}
+
+li{
+list-style-type:none;
+}
+
+
+.anres_left_right p {
+margin: 0;
+line-height: 1.5;
+}
+
+.anres_left_right a {
+color: #9F2C15;
+text-decoration: none;
+}
+
+.leftbanner a{
+color: #9F2C15;
+text-decoration: none;
+}
+
+
+.leftbanner ul{
+border-bottom: 1px solid #ffffff;
+}
+.leftbanner li{
+line-height:32px;
+width: 180px;
+}
+.leftbanner .mdui-textfield{
+  width:225px;
+}
+.leftbanner li a{
+  width:225px;
+}
+.recent{
+display:inline-block;
+width:1050px;
+justify-content: start;
+vertical-align:top;
+
+}
+.breakingnews{
+  margin-left:100px;
+}
+.recent li{
+  margin-bottom:15px;
+}
+
+.recent li img{
+  margin-left:25px;
+  margin-bottom:15px;
+  -webkit-user-drag:none;
+  -khtml-user-drag:none;
+  user-select: none;
+  -moz-user-select:none;
+  -ms-user-drag:none; 
+}
+.li {
+text-align: -webkit-match-parent;
+
+}
+.footer{
+display:inline;
+position:absolute;
+bottom:0;
+}
+/* .recent ul li{
+height: 200px;
+} */

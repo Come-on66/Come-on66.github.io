@@ -1,0 +1,91 @@
+.scoop ul{
+    width: 1225px;
+    margin:0;
+    padding:0;
+}
+.scoop ul li{
+    float:left;
+    width: 230px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+
+    margin-bottom: 10px;
+}
+.scoop ul li h4, .rate{
+    margin :20px 20px 20px 25px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.scoop ul li h3, .rate{
+    margin :20px 20px 20px 25px;
+   
+    font-weight: 600;
+}
+.scoop ul li img{
+    width: 230px;
+    height: 55%;
+    }
+.scoop{        
+    margin:0 0 0 -6px;
+    margin-top: 30px;
+}
+.scoop a{
+    text-decoration:none;
+}
+.scoop a h3 {
+    color:#0e0d0e;
+}
+.scoop a h3:hover {
+    color:#9F2C15;
+}
+.scoop a h4 {
+    color:#3d3c3d;
+}
+
+.w{
+    margin:0;
+    width: 1200px;
+    margin:auto;
+  }
+  li{
+    list-style: none;
+    overflow: hidden;
+/* float:left; */
+}
+.contact{
+    font-family: 'HarmonyOS Sans SC Medium';
+}
+
+.endline{
+    background-color: rgb(61, 61, 61); 
+    color:#fff;
+    margin-top:425px;
+
+    
+}
+.contact li{
+    line-height: 45px;
+    text-align: center;;
+}
+.endline a{
+    background-color: rgb(61, 61, 61); 
+    color:#fff;
+}
+.contact h2{
+    margin-left:auto;
+}
+.mdui-textfield{
+    width:55%;
+   
+}
+.textfield-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.icon-side{
+    position: relative;
+    top: 12.5px;
+}
