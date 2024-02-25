@@ -49,12 +49,7 @@ h1 {
       justify-content: flex-start;
     }
   }
-  body{
-    overflow-x:hidden
-}
-  /* .recent{
-    overflow-x:scroll ;
-  } */
+  
   .nav a:hover {
     color: #9F2C15;
     background-color: #e0c2c2;
@@ -128,9 +123,7 @@ h1 {
     font-weight: medium;
     font-style: normal;
     }
-    body{
-      background-color:#F1F5F6;
-    }
+    
 .newsblock .leftbanner{
   position: sticky;
   top: 100px;
@@ -146,6 +139,7 @@ h1 {
 
 body{
   background-color:#F1F5F6  !important;
+  overflow-x:hidden;
 }
 .newsblock{
   display:inline-flex;
@@ -249,10 +243,39 @@ display:inline-block;
 width:1050px;
 justify-content: start;
 vertical-align:top;
-
 }
+
+.breakingnews::-webkit-scrollbar {/*滚动条整体样式*/
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+}
+
+.breakingnews::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(0,0,0,.25);
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+.breakingnews::-webkit-scrollbar-thumb:hover {
+  background: #949A9D;
+}
+
+.breakingnews::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  background: rgba(0,0,0,.1);
+  border-radius: 0;
+}
+
+::selection {
+  background-color: #cce2ff;
+  color: rgba(0,0,0,.87);
+}
+
 .breakingnews{
   margin-left:100px;
+  overflow-x:scroll;
 }
 .recent li{
   margin-bottom:15px;
