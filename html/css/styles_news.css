@@ -49,7 +49,12 @@ h1 {
       justify-content: flex-start;
     }
   }
-  
+  body{
+    overflow-x:hidden
+}
+  /* .recent{
+    overflow-x:scroll ;
+  } */
   .nav a:hover {
     color: #9F2C15;
     background-color: #e0c2c2;
