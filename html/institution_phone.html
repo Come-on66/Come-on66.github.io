@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>银发候鸟官方网站</title>
+        <link rel="shortcut icon" href="./res/favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
+        <link rel="stylesheet" href="./css/styles_slider_phone.css">
+        <link rel="stylesheet" href="./css/styles_index_phone.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body class="mdui-theme-accent-red mdui-theme-primary-red mdui-drawer-body-left">
+      	<!--[if IE]> <meta http-equiv="refresh" content="1;url=forIEusers.html"> <![endif]-->
+        <div class="mdui-appbar">
+            <div class="mdui-toolbar mdui-color-theme">
+              <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="toggle">
+                <i class="mdui-icon material-icons">menu</i>
+              </a>
+              <img alt="" src="./res/logo.png">
+              <a href="javascript:;" class="mdui-typo-title">康养机构</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <button type="button" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#user-menu'}">
+                <i class="mdui-icon material-icons"  mdui-tooltip="{content: '用户管理'}">&#xe853;</i>
+             </button>
+             <ul class="mdui-menu" id="user-menu">
+               <li class="mdui-menu-item">
+                 <a href="login.html" class="mdui-ripple"><i class="mdui-menu-item-icon mdui-icon material-icons">&#xe7fd;</i>登陆</a>
+               </li>
+               <li class="mdui-menu-item">
+                 <a href="reg.html"><i class="mdui-menu-item-icon mdui-icon material-icons">&#xe7fe;</i>注册</a>
+               </li>
+               <li class="mdui-divider"></li>
+               <li class="mdui-menu-item">
+                 <a href="javascript:;" class="mdui-ripple"><i class="mdui-menu-item-icon mdui-icon material-icons">&#xe85c;</i>管理后台</a>
+               </li>
+               <li class="mdui-divider"></li>
+               <li class="mdui-menu-item">
+                 <a href="javascript:;" class="mdui-ripple"><i class="mdui-menu-item-icon mdui-icon material-icons">&#xe2c4;</i>下载 APP</a>
+               </li>
+             </ul>
+           </div>
+
+                <div class="mdui-drawer" id="drawer">
+                  <ul class="mdui-list">
+                    <li class="mdui-list-item mdui-ripple" id="index-phone">
+                      <i class="mdui-list-item-icon mdui-icon material-icons  ">home</i>
+                      <div class="mdui-list-item-content ">网站首页</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple"  id="about-phone">
+                      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88e;</i>
+                      <div class="mdui-list-item-content">公司简介</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple" id="news-phone">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe031;</i>
+                      <div class="mdui-list-item-content">最新资讯</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple" id="toggle-menu">
+                      <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red-900">&#xe8e8;</i>
+                      <div class="mdui-list-item-content mdui-text-color-red-900">康养机构</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple" id="res-phone">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe8d0;</i>
+                        <div class="mdui-list-item-content">红色资源</div>
+                      </li>
+                      <li class="mdui-list-item mdui-ripple" id="coop-phone">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe813;</i>
+                        <div class="mdui-list-item-content">合作咨询</div>
+                      </li>
+                      <li class="mdui-subheader">用户管理</li>
+                      <li class="mdui-list-item mdui-ripple" id="login-phone">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe7fd;</i>
+                        <div class="mdui-list-item-content">登陆</div>
+                      </li>
+                      <li class="mdui-list-item mdui-ripple" id="reg-phone">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe7fe;</i>
+                        <div class="mdui-list-item-content">注册</div>
+                      </li>
+                      <li class="mdui-subheader">APP 下载</li>
+                      <li class="mdui-list-item mdui-ripple" disabled>
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe8d3;</i>
+                        <div class="mdui-list-item-content">管理端下载</div> </li>
+                        <li class="mdui-list-item mdui-ripple" id="c-term">
+                          <i class="mdui-list-item-icon mdui-icon material-icons">&#xe332;</i>
+                          <div class="mdui-list-item-content">用户端下载</div> </li>
+                  </ul>
+                </div>
+          </div>
+          <div class="slideshow">
+            <!-- 第一张图 -->
+            <div class="slide active slide1">
+                <img src="./res/image1.jpg" alt="Image 1">
+            </div>
+            <!-- 第二张图 -->
+            <div class="slide slide2">
+                <img src="./res/image2.jpg" alt="Image 2">
+            </div>
+            <!-- 第三张图 -->
+            <div class="slide slide3">
+                <img src="./res/image3.jpg" alt="Image 3">
+            </div>
+        </div>
+        <br>
+        <div class="managebox mdui-card mdui-ripple">
+            <img alt="" src="./res/logo.png">
+            <h2>&nbsp;&nbsp;银发候鸟合作管理平台</h2>
+<div><p>&nbsp;&nbsp;请先<a href="login.html">登陆</a>！</p></div>
+        </div>
+        <button type="button" class="mdui-fab mdui-color-theme-accent mdui-fab-fixed mdui-ripple button_go_top" id="go_top">
+            <i class="mdui-icon material-icons">&#xe5d8;</i>
+          </button>
+          <div class="preferences">
+            <h2> 热门排行</h2>
+            <ul>
+                <li><div class="mdui-card preferences_card mdui-ripple"><h2 class="subtitle-card">卡片1</h2></div></li>
+                <li><div class="mdui-card preferences_card mdui-ripple"><h2 class="subtitle-card">卡片2</h2></div></li>
+                <li><div class="mdui-card preferences_card mdui-ripple"><h2 class="subtitle-card">卡片3</h2></div></li>
+                <li><div class="mdui-card preferences_card mdui-ripple"><h2 class="subtitle-card">卡片4</h2></div></li>
+                <li><div class="mdui-card preferences_card mdui-ripple"><h2 class="subtitle-card">卡片5</h2></div></li>
+                <li><div class="mdui-card preferences_card mdui-ripple"><h2 class="subtitle-card">卡片6</h2></div></li>
+                <li><div class="mdui-card preferences_card mdui-ripple"><h2 class="subtitle-card">卡片7</h2></div></li>
+                <li><div class="mdui-card preferences_card mdui-ripple"><h2 class="subtitle-card">卡片8</h2></div></li>
+                <li><div class="mdui-card preferences_card mdui-ripple"><h2 class="subtitle-card">卡片9</h2></div></li>
+                <li><div class="mdui-card preferences_card mdui-ripple"><h2 class="subtitle-card">卡片10</h2></div></li>
+            </ul>
+          </div>
+        <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+        <script src="./js/isDesktop.js"></script>
+        <script src="https://cdn.bootcss.com/babel-polyfill/7.6.0/polyfill.js"></script>
+        <script>
+            var $ = mdui.$;
+            var button = document.getElementById("go_top");
+    function handleClick() {
+      window.scrollTo(0, 0);
+    }
+    button.addEventListener('click', handleClick);
+            var inst = new mdui.Drawer('#drawer');
+            $('#toggle').on('click', function () {
+             inst.toggle();
+});
+$('#toggle-menu').on('click', function () {
+             inst.toggle();
+});
+$('#coop-phone').on('click', function () {
+    window.location.href="coop_phone.html"
+             inst.toggle();
+});
+$('#about-phone').on('click', function () {
+             window.location.href="about_phone.html"
+             inst.toggle();
+});
+$('#news-phone').on('click', function () {
+             window.location.href="news_phone.html"
+             inst.toggle();
+});
+$('#index-phone').on('click', function () {
+             window.location.href="index_phone.html"
+             inst.toggle();
+});
+$('#res-phone').on('click', function () {
+             window.location.href="res_phone.html"
+             inst.toggle();
+});
+$('#login-phone').on('click', function () {
+             window.location.href="login.html"
+});
+$('#reg-phone').on('click', function () {
+             window.location.href="reg.html"
+});
+// JavaScript代码可选，用于控制切换轮播图
+var slides = document.getElementsByClassName("slide");
+    var currentSlideIndex = 0;
+    
+    function showNextSlide() {
+        slides[currentSlideIndex].classList.remove("active");
+        
+        if (++currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+        }
+        
+        slides[currentSlideIndex].classList.add("active");
+    }
+    
+    setInterval(showNextSlide, 4000); // 每4秒切换到下一张图
+    function Detect_IE() {
+      var ua = window.navigator.userAgent;
+         
+           var msie = ua.indexOf('MSIE ');
+           if (msie > 0) {
+            
+             return "IE " + parseInt( ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+           }
+         
+           var trident = ua.indexOf('Trident/');
+           if (trident > 0) {
+            
+             var rv = ua.indexOf('rv:');
+             return "IE " + parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+           }
+
+           // other browser
+           return "false";
+         }
+         var result=Detect_IE();
+         if (result!="false")
+         
+         {
+          window.location.href="forIEusers_higher.html"
+          
+         }
+         isDesktop("institution.html");
+        </script>
+           <footer>
+            <p class="footinf">
+            银发候鸟 (c) 2024 | 预留备案信息
+            </p>
+          </footer>
+    </body>
+</html>

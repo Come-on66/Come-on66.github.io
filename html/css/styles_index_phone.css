@@ -1,0 +1,45 @@
+.managebox{
+    height:150px;
+    width:auto;
+    min-width: 250px;
+    margin-top:5px;
+    margin-bottom:32px;
+    text-align: center;
+    display: grid;
+    align-items: center; /* 在行轴上居中对齐 */
+    justify-items: center; /* 在列轴上居中对齐 */
+}
+
+.footinf{
+    text-align: center;
+}
+li{
+    list-style-type:none;
+    }
+    
+    .preferences_card{
+    width:120px;
+    height:125px;
+    margin-left:-20px;
+    margin-bottom:26px;
+    }
+    .subtitle-card{
+        margin-left:15px;
+        
+      
+    }
+    .preferences li{
+        width:120px;
+        margin-right:25px;
+        display: inline-flex;
+    }
+    .preferences{
+        margin-left:50px;
+    }
+    .button_go_top{
+        z-index:1000;
+    }
+    body{
+      overflow-x:hidden;
+  
+    }

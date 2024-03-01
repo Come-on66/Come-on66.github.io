@@ -1,0 +1,33 @@
+.survey{
+    height:630px;
+    width:auto;
+    min-width: 250px;
+
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.footinf{
+    text-align: center;
+}
+li{
+    list-style-type:none;
+    }
+    
+    .button_go_top{
+        z-index:1000;
+    }
+    body{
+      overflow-x:hidden;
+      padding-top:1px;
+    }
+    .location .mdui-select{
+        width:88px;
+    }
+    .sub .mdui-select{
+        width:270px;
+    }
+    .mdui-textfield{
+        width:325px;
+    }

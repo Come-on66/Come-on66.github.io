@@ -185,6 +185,10 @@ color: #333;
 text-decoration: none;
 }
 
+li{
+  list-style-type:none;
+  }
+
 .anews_left_y {
 display: flex;
 margin-top: 10px;
@@ -204,9 +208,6 @@ max-width:40%;
 margin-left: 400px;
 }
 
-li{
-list-style-type:none;
-}
 
 
 .anres_left_right p {

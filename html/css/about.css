@@ -29,14 +29,15 @@
 .bigpicture .small_title h3{
     margin-top: 10px;
 }
+li{
+    list-style: none;
+}
 .middle_info .two_title{
     text-align: center;
     color: black;
     margin-bottom: 100px;
 }
-li{
-    list-style: none;
-}
+
 .middle_info{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -50,6 +51,16 @@ li{
     background-color:#fff;
     box-shadow: 0 2px 3px 3px rgba(0,0,0,0.1);
     border-radius: 0 0 5% 5%;
+}
+.middle_info ul li a{
+    display: block;
+    /* padding-left: 5px; */
+    width: 230px;
+    height: 200px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
 }
 img{
     width: 100%;
@@ -65,26 +76,12 @@ img{
 .last{
     margin-right: 117.5px;
 }
-.middle_info ul li a{
-    display: block;
-    /* padding-left: 5px; */
-    width: 230px;
-    height: 200px;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-}
+
 .cont{
 line-height:20px;
 }
 .middle_info ul li a:hover{
     color: #9F2C15;
-}
-.final_info {
-  overflow: hidden;
-  user-select: none;
-  -ms-user-select: none;
 }
 .right_box{
     user-select: none;
@@ -115,6 +112,12 @@ line-height:20px;
     overflow: hidden;
     height: 600px;
 }
+
+.final_info {
+    overflow: hidden;
+    user-select: none;
+    -ms-user-select: none;
+  }
 .goal p{
     line-height: 25px;
 }

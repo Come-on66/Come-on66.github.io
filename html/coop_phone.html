@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>银发候鸟官方网站</title>
+        <link rel="shortcut icon" href="./res/favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
+        <link rel="stylesheet" href="./css/styles_slider_phone.css">
+        <link rel="stylesheet" href="./css/styles_coop_phone.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body class="mdui-theme-accent-red mdui-theme-primary-red mdui-drawer-body-left">
+      	<!--[if IE]> <meta http-equiv="refresh" content="1;url=forIEusers.html"> <![endif]-->
+        <div class="mdui-appbar">
+            <div class="mdui-toolbar mdui-color-theme">
+              <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="toggle">
+                <i class="mdui-icon material-icons">menu</i>
+              </a>
+              <img alt="" src="./res/logo.png">
+              <a href="javascript:;" class="mdui-typo-title">合作咨询</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <button type="button" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#user-menu'}">
+                <i class="mdui-icon material-icons"  mdui-tooltip="{content: '用户管理'}">&#xe853;</i>
+             </button>
+             <ul class="mdui-menu" id="user-menu">
+               <li class="mdui-menu-item">
+                 <a href="login.html" class="mdui-ripple"><i class="mdui-menu-item-icon mdui-icon material-icons">&#xe7fd;</i>登陆</a>
+               </li>
+               <li class="mdui-menu-item">
+                 <a href="reg.html"><i class="mdui-menu-item-icon mdui-icon material-icons">&#xe7fe;</i>注册</a>
+               </li>
+               <li class="mdui-divider"></li>
+               <li class="mdui-menu-item">
+                 <a href="javascript:;" class="mdui-ripple"><i class="mdui-menu-item-icon mdui-icon material-icons">&#xe85c;</i>管理后台</a>
+               </li>
+               <li class="mdui-divider"></li>
+               <li class="mdui-menu-item">
+                 <a href="javascript:;" class="mdui-ripple"><i class="mdui-menu-item-icon mdui-icon material-icons">&#xe2c4;</i>下载 APP</a>
+               </li>
+             </ul>
+             <button type="button" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#operate-menu'}">
+              <i class="mdui-icon material-icons" mdui-tooltip="{content: '菜单'}">&#xe5d4;</i>
+           </button>
+           <ul class="mdui-menu" id="operate-menu">
+            <li class="mdui-menu-item">
+              <a href="javascript:window.location.reload();" class="mdui-ripple"><i class="mdui-menu-item-icon mdui-icon material-icons">&#xe5d5;</i>刷新</a>
+            </li>
+            <li class="mdui-divider"></li>
+            <li class="mdui-menu-item">
+              <a href="javascript:;"><i class="mdui-menu-item-icon mdui-icon material-icons">&#xe161;</i>保存草稿</a>
+            </li>
+            <li class="mdui-menu-item">
+              <a href="javascript:;" class="mdui-ripple"><i class="mdui-menu-item-icon"></i>EMPTY</a>
+            </li>
+          </ul>
+           </div>
+
+                <div class="mdui-drawer" id="drawer">
+                  <ul class="mdui-list">
+                    <li class="mdui-list-item mdui-ripple" id="index-phone">
+                      <i class="mdui-list-item-icon mdui-icon material-icons  ">home</i>
+                      <div class="mdui-list-item-content">网站首页</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple"  id="about-phone">
+                      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88e;</i>
+                      <div class="mdui-list-item-content">公司简介</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple" id="news-phone">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe031;</i>
+                      <div class="mdui-list-item-content">最新资讯</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple" id="institution-phone">
+                      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe8e8;</i>
+                      <div class="mdui-list-item-content">康养机构</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple" id="res-phone">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe8d0;</i>
+                        <div class="mdui-list-item-content">红色资源</div>
+                      </li>
+                      <li class="mdui-list-item mdui-ripple mdui-text-color-red-900" id="toggle-menu">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red-900">&#xe813;</i>
+                        <div class="mdui-list-item-content">合作咨询</div>
+                      </li>
+                      <li class="mdui-subheader">用户管理</li>
+                      <li class="mdui-list-item mdui-ripple" id="login-phone">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe7fd;</i>
+                        <div class="mdui-list-item-content">登陆</div>
+                      </li>
+                      <li class="mdui-list-item mdui-ripple" id="reg-phone">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe7fe;</i>
+                        <div class="mdui-list-item-content">注册</div>
+                      </li>
+                      <li class="mdui-subheader">APP 下载</li>
+                      <li class="mdui-list-item mdui-ripple" disabled>
+                        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe8d3;</i>
+                        <div class="mdui-list-item-content">管理端下载</div> </li>
+                        <li class="mdui-list-item mdui-ripple" id="c-term">
+                          <i class="mdui-list-item-icon mdui-icon material-icons">&#xe332;</i>
+                          <div class="mdui-list-item-content">用户端下载</div> </li>
+                  </ul>
+                </div>
+          </div>
+          <div class="slideshow">
+            <!-- 第一张图 -->
+            <div class="slide active slide1">
+                <img src="./res/image1.jpg" alt="Image 1">
+            </div>
+            <!-- 第二张图 -->
+            <div class="slide slide2">
+                <img src="./res/image2.jpg" alt="Image 2">
+            </div>
+            <!-- 第三张图 -->
+            <div class="slide slide3">
+                <img src="./res/image3.jpg" alt="Image 3">
+            </div>
+        </div>
+        <br>
+        <div class="survey">
+          <h2>加入我们</h2>
+          <p>想要合作咨询吗？请您留下您的联系方式:</p>
+          <div class="mdui-textfield mdui-textfield-floating-label">
+
+            <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名</label>
+            <i class="mdui-icon material-icons"></i>
+            <input class="mdui-textfield-input" type="text">
+        </div>
+
+        <div class="location">
+        <br><br>&nbsp;<i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe1b3;</i>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select class="mdui-select" mdui-select>
+          <option value="1" selected>省</option>
+          <option value="2">北京</option>
+          <option value="3">上海</option>
+          <option value="4">重庆</option>
+          <option value="5">天津</option>
+          <option value="6">河北</option>
+          <option value="7">河南</option>
+          <option value="8">湖北</option>
+          <option value="9">湖南</option>
+          <option value="10">江西</option>
+          <option value="11">贵州</option>
+          <option value="12">云南</option>
+          <option value="13">四川</option>
+          <option value="14">山东</option>
+          <option value="15">山西</option>
+          <option value="16">陕西</option>
+          <option value="17">吉林</option>
+          <option value="18">哈尔滨</option>
+          <option value="19">宁夏</option>
+          <option value="20">西藏</option>
+          <option value="21">新疆</option>
+          <option value="22">甘肃</option>
+          <option value="23">江苏</option>
+          <option value="24">浙江</option>
+          <option value="25">安徽</option>
+          <option value="26">青海</option>
+          <option value="27">福建</option>
+          <option value="28">广西</option>
+          <option value="29">广东</option>
+          <option value="30">辽宁</option>
+          <option value="31">海南</option>
+          <option value="32">香港</option>
+          <option value="33">澳门</option>
+          <option value="34">台湾</option>
+        </select>
+        <select class="mdui-select"  mdui-select>
+          <option value="1" selected>市</option>
+          <option value="2">贵阳</option>
+          <option value="3">遵义</option>
+          <option value="4">毕节</option>
+          <option value="5">六盘水</option>
+          <option value="6">安顺</option>
+          <option value="7">铜仁</option>
+          <option value="8">黔东南</option>
+          <option value="9">黔南</option>
+          <option value="10">黔西南</option>
+        </select>
+        <select class="mdui-select"  mdui-select>
+          <option value="1" selected>区</option>
+          <option value="2">七星关区</option>
+          <option value="3">赫章县</option>
+          <option value="4">威宁县</option>
+          <option value="5">纳雍县</option>
+          <option value="6">织金县</option>
+          <option value="7">黔西市</option>
+          <option value="8">金沙县</option>
+          <option value="9">大方县</option>
+        </select></div><div class="sub">
+        <br>
+        <br>&nbsp;<i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe53f;</i>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select class="mdui-select" mdui-select>
+          <option value="1" selected>项目</option>
+          <option value="2">项目1</option>
+          <option value="3">项目2</option>
+          <option value="4">项目3</option>
+          <option value="5">项目4</option>
+          <option value="6">项目5</option>
+          <option value="7">项目6</option>
+          <option value="8">项目7</option>
+          <option value="9">项目8</option>
+        </select>
+        <button type="button" class="mdui-fab mdui-color-theme-accent mdui-fab-fixed mdui-ripple button_go_top" id="go_top">
+          <i class="mdui-icon material-icons">&#xe5d8;</i>
+        </button>
+        <br><br><br>&nbsp;<i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe241;</i>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select class="mdui-select" mdui-select>
+          <option value="1" selected>合作类型</option>
+          <option value="2">养老院</option>
+          <option value="3">红色基地</option>
+          <option value="4">合作公司</option>
+          <option value="5">其他（请在备注中说明）</option>
+        </select></div>
+        <div class="mdui-textfield mdui-textfield-floating-label">
+
+          <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱</label>
+          <i class="mdui-icon material-icons">&#xe0be;</i>
+          <input class="mdui-textfield-input" type="text">
+        </div>
+        <div class="mdui-textfield mdui-textfield-floating-label">
+
+          <label class="mdui-textfield-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备注</label>
+          <i class="mdui-icon material-icons">&#xe3c9;</i>
+          <textarea class="mdui-textfield-input" type="text"></textarea>
+        </div><br><br><br></div>
+        <button type="button" class="mdui-btn mdui-btn-raised mdui-ripple mdui-center mdui-color-theme-accent" id="submit">提交</button><br><br>
+        <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+        <script src="./js/isDesktop.js"></script>
+        <script src="https://cdn.bootcss.com/babel-polyfill/7.6.0/polyfill.js"></script>
+        <script>
+         
+         var button = document.getElementById("go_top");
+    function handleClick() {
+      window.scrollTo(0, 0);
+    }
+    button.addEventListener('click', handleClick);
+    var $ = mdui.$;
+            var inst = new mdui.Drawer('#drawer');
+            $('#toggle').on('click', function () {
+             inst.toggle();
+});
+$('#toggle-menu').on('click', function () {
+             inst.toggle();
+});
+$('#index-phone').on('click', function () {
+    window.location.href="index_phone.html"
+             inst.toggle();
+});
+$('#about-phone').on('click', function () {
+             window.location.href="about_phone.html"
+             inst.toggle();
+});
+$('#news-phone').on('click', function () {
+             window.location.href="news_phone.html"
+             inst.toggle();
+});
+$('#institution-phone').on('click', function () {
+             window.location.href="institution_phone.html"
+             inst.toggle();
+});
+$('#res-phone').on('click', function () {
+             window.location.href="res_phone.html"
+             inst.toggle();
+});
+$('#login-phone').on('click', function () {
+             window.location.href="login.html"
+});
+$('#reg-phone').on('click', function () {
+             window.location.href="reg.html"
+});
+// JavaScript代码可选，用于控制切换轮播图
+var slides = document.getElementsByClassName("slide");
+    var currentSlideIndex = 0;
+    
+    function showNextSlide() {
+        slides[currentSlideIndex].classList.remove("active");
+        
+        if (++currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+        }
+        
+        slides[currentSlideIndex].classList.add("active");
+    }
+    
+    setInterval(showNextSlide, 4000); // 每4秒切换到下一张图
+  
+    function Detect_IE() {
+      var ua = window.navigator.userAgent;
+         
+           var msie = ua.indexOf('MSIE ');
+           if (msie > 0) {
+            
+             return "IE " + parseInt( ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+           }
+         
+           var trident = ua.indexOf('Trident/');
+           if (trident > 0) {
+            
+             var rv = ua.indexOf('rv:');
+             return "IE " + parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+           }
+
+           // other browser
+           return "false";
+         }
+         var result=Detect_IE();
+         if (result!="false")
+         
+         {
+          window.location.href="forIEusers_higher.html"
+          
+         }
+         isDesktop("coop.html");
+        </script>
+           <footer>
+            <p class="footinf">
+            银发候鸟 (c) 2024 | 预留备案信息
+            </p>
+          </footer>
+    </body>
+</html>

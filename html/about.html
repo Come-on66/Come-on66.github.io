@@ -30,7 +30,6 @@
 </head>
 <body class="mdui-theme-accent-red">
 	<!--[if IE]> <meta http-equiv="refresh" content="1;url=forIEusers.html"> <![endif]-->
-  <script src="./js/ismobile.js"></script>
   <div class="upper">
   <div class="logo">
     <h1>银发候鸟<span class="slogan"> | 智慧康养 健康旅居</span></h1>
@@ -66,7 +65,6 @@
       <div class="cont">通过对红色文化资源的创新设计，与银龄人的精神需求相结合，这是对红色文化的时代挖掘和价值重塑，同时延长了养老产业链，扩大产业涉及人群，带动更多城乡人员就业态势向好，助力乡村振兴。</div></a></li>
     <li><img src="./res/image1.jpg" alt=""><a href="#"><br><h3>养老服务</h3>
       <div class="cont">以“红色康养＋旅居”模式推出将老年人精神文明需求与红色景点和康养基地供给相对应的“信息对接口”，打造红色康养旅居服务平台，在供需之间搭建桥梁，并辅以“4+2”的服务模式保障。</div></a></li>
-    <!-- <li class="last"><img src="./res/image1.jpg" alt=""><a href="#"><h3>4</h3>ssssssssssssssssssssssss</a></li> -->
   </ul>
 </div>
 <div class="final_info">
@@ -98,6 +96,7 @@
   </p>
 </footer>
 <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+<script src="./js/ismobile.js"></script>
 <script src="https://cdn.bootcss.com/babel-polyfill/7.6.0/polyfill.js"></script>
 <script>
   var button = document.getElementById("go_top");
@@ -133,7 +132,7 @@ button.addEventListener('click', handleClick);
           
          }
          try{
-         isDesktop();}
+         isDesktop("true" ,"about_phone.html");}
          catch(error){}
 </script>
 </body>
