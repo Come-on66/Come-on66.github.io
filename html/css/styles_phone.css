@@ -4,3 +4,32 @@
     -moz-user-select: none;
     -webkit-user-select: none;
 }
+
+.bk1{
+    background-image: url(../res/bk1.jpg);
+    width: 125px;
+}
+.bk2{
+    background-image: url(../res/bk2.jpg);
+}
+.bk3{
+    background-image: url(../res/bk3.jpg);
+}
+.bk4{
+    background-image: url(../res/bk4.jpg);
+}
+.bk5{
+    background-image: url(../res/bk5.jpg);
+}
+.bk6{
+    background-image: url(../res/bk6.jpg);
+}
+.bk7{
+    background-image: url(../res/bk7.jpg);
+}
+.bk8{
+    background-image: url(../res/bk8.jpg);
+}
+.bk9{
+    background-image: url(../res/bk9.jpg);
+}
