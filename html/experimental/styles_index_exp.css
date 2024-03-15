@@ -15,19 +15,31 @@
     flex:1;
     background-size: cover;
     animation: slideShowA 16s infinite;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment:fixed;
 
 }
+
 .banner .w{
     z-index:2;
     width: 1200px;
     background-position:center;
     animation: slideShow 16s infinite;
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
     
 }
 .banner .w, .blurbanner{
     position:absolute;
     height: 421px;
     /* margin-top: 10px; */
+  
 }
 
 @keyframes slideShow {
@@ -37,10 +49,30 @@
   100% {background: url('../res/new1.png') no-repeat top center;} /* 最后返回第一张背景图片，形成循环 */
 }
 @keyframes slideShowA {
-    0% {background: url('../res/new1_initial.png') no-repeat top center;} /* 初始状态显示第一张背景图片 */
-    25% {background: url('../res/new2_initial.png') no-repeat top center;} /* 在动画进行到33%时切换到第二张背景图片 */
-    75% {background: url('../res/new3_initial.png') no-repeat top center;} /* 同理... */
-    100% {background: url('../res/new1_initial.png') no-repeat top center;} /* 最后返回第一张背景图片，形成循环 */
+    0% {background: url('../res/new1_initial.png') no-repeat top center;  background-size: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment:fixed;} /* 初始状态显示第一张背景图片 */
+    25% {background: url('../res/new2_initial.png') no-repeat top center;  background-size: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment:fixed;} /* 在动画进行到33%时切换到第二张背景图片 */
+    75% {background: url('../res/new3_initial.png') no-repeat top center;  background-size: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment:fixed;} /* 同理... */
+    100% {background: url('../res/new1_initial.png') no-repeat top center;  background-size: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment:fixed;} /* 最后返回第一张背景图片，形成循环 */
   }
 .subnav{
     float:left;
@@ -257,7 +289,7 @@ margin-bottom: 0;
     
   
     line-height:50px;
-    white-space:nowrap;
+    white-space:no-wrap;
 }
 
 .snews ul{
@@ -334,38 +366,19 @@ margin-bottom: 0;
 .blanket
 {width:100%;
 }
-
-.contact{
-    font-family: 'HarmonyOS Sans SC Medium';
-    padding-left:auto;
-    display:inline-flex;
-    justify-content: flex-start;
-    white-space: nowrap;
-    overflow: hidden;
-  
+.contact li{
+    white-space: no-wrap;
 }
-
-.endline:not(h2,h3){
+.endline{
     background-color: rgb(61, 61, 61); 
     color:#fff;
-    display: grid;
-    justify-content: center;
-    margin-top:425px;
+    margin-top:275px;
+
     
 }
-
 .contact li{
     line-height: 45px;
-    margin: 0 315px 0 315px;
-
-}
-#lul{
-
-    justify-content: flex-start;
-}
-#rul{
-
-    justify-content: flex-end;
+    text-align: center;;
 }
 .endline a{
     background-color: rgb(61, 61, 61); 
@@ -374,4 +387,3 @@ margin-bottom: 0;
 .contact h2{
     margin-left:auto;
 }
-

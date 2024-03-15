@@ -1,0 +1,6 @@
+.mdui-menu, .mdui-drawer,.mdui-subheader,.managebox, .middle_info, .preferences ,.survey,.mdui-btn,.mdui-appbar{
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}

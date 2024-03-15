@@ -55,18 +55,34 @@
 }
 .contact{
     font-family: 'HarmonyOS Sans SC Medium';
+    padding-left:auto;
+    display:inline-flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.endline{
+.endline:not(h2,h3){
     background-color: rgb(61, 61, 61); 
     color:#fff;
+    display: grid;
+    justify-content: center;
     margin-top:425px;
-
     
 }
+
 .contact li{
     line-height: 45px;
-    text-align: center;;
+    margin: 0 315px 0 315px;
+
+}
+#lul{
+
+    justify-content: flex-start;
+}
+#rul{
+
+    justify-content: flex-end;
 }
 .endline a{
     background-color: rgb(61, 61, 61); 

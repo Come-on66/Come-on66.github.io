@@ -17,34 +17,47 @@ li{
     .recent {
         display: inline-block;
         width: auto;
-        justify-content: start;
+        justify-content: center;
         vertical-align: top;
         margin-left:25px;
+
+        align-items: center;
       }
       
       .news-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: flex-start ;
+        align-items: center;
       }
-      
+  
       .news-item {
-        width: 50%;
-        display: flex;
+    
+        max-width: 395px;
+        display: grid;
         align-items: center;
         margin-bottom: 15px;
         border-bottom: 1px solid #ffffff;
         padding: 10px;
+        justify-content: center;
       }
       
+      @media screen and (min-width: 768px) {
+        .news-container {
+         padding-left:auto;
+          /* 其他样式 */
+        }
+      }
+
       .news-image {
-        width: 40%;
-        margin-right: 15px;
+        width: 200px;
+
       }
       
       .news-image img {
-        width: 100%;
-        height: auto;
+       width:100%;
+        height:auto;
+
       }
       
       .news-text {
@@ -60,6 +73,7 @@ li{
       .news-text p {
         margin: 0;
         line-height: 1.5;
+        width:280px;
       }
       
       .news-text p:last-child {
@@ -69,4 +83,10 @@ li{
       .news-text p:last-child a {
         color: #9F2C15;
         text-decoration: none;
+      }
+      .news-text .subtitle{
+        font-size:20px;
+        margin-top:10px;
+        margin-bottom: 20px;
+        line-height:1.8;
       }
