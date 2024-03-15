@@ -99,6 +99,7 @@ textarea{
 
 .contact li{
     line-height: 45px;
+    list-style: none;
     margin: 0 315px 0 315px;
 
 }
@@ -116,4 +117,12 @@ textarea{
 }
 .contact h2{
     margin-left:auto;
+}
+.contus{
+    margin-left:210px;
+    margin-bottom: 12px;
+}
+.li{
+    list-style: none;
+    overflow: hidden;
 }

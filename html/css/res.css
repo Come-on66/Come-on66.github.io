@@ -100,6 +100,7 @@
 li{
     list-style: none;
     overflow: hidden;
+    white-space: nowrap;
 /* float:left; */
 }
 body{
@@ -143,4 +144,8 @@ body{
 }
 .contact h2{
     margin-left:auto;
+}
+.contus{
+    margin-left:210px;
+    margin-bottom: 12px;
 }

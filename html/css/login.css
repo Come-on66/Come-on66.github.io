@@ -38,6 +38,9 @@ body{
     z-index:1000 ;
     margin-top:450px;
   }
+  .footinf a{
+    color:black;
+  }
 
 @font-face {
     font-family: 'HarmonyOS Sans SC Medium';

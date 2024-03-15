@@ -303,3 +303,7 @@ bottom:0;
 /* .recent ul li{
 height: 200px;
 } */
+.footinf a{
+  color:black;
+  text-decoration: none;
+}
