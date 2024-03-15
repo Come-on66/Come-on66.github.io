@@ -1,0 +1,374 @@
+/* 路线图片展示 */
+.headBox{
+    height: 600px;
+    background-color: rgb(215, 54, 14);
+}
+.people{
+    position: fixed;
+    right: 10px;
+    top: 300px;
+    z-index: 1;
+}
+.startPicture{
+    height: 600px;
+    width: 1200px;
+}
+.firstBox{
+    position: relative;
+    height: 600px;
+    /* background-image: url(../../html/res/R-G.png); */
+    box-shadow:  0 0 3px 3px 2px ;
+    display: grid;
+    border: 0;
+}
+body{
+    background-color: #fff;
+}
+.w{
+    width: 1200px;
+    margin :0 auto;
+
+}
+
+
+
+.firstBox .info1 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    /* width: 300px; */
+    /* line-height: 60px; */
+    font-size: 22px;
+    color: #ffffff;
+    /* float: left; */
+} 
+.firstBox .info1 h1{
+    font-size: 30px;
+}
+.firstBox .info1 p{
+    font-size: 20px;
+    text-indent: 2em;
+    line-height: 3;
+    display: inline-block;
+    width: 900px;
+
+}
+.firstBox .info1 a{
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #9F2C15;
+}
+.firstBox .info1 a:hover{
+    color: #da910a;
+}
+/* 推荐指数 */
+.firstBox  .info2 {
+    position: absolute;
+    top: 480px;
+    right: 120px;
+    line-height: 60px;
+    margin-left: 100px;
+    width: auto;
+    background-color: none;
+    color: #747475;
+}
+/* 路线信息板块 */
+.infoMaxBox{
+    position: relative;
+    height: 950px;
+}
+div .infoBoxOne h2{
+    margin-top: 50px; 
+    font-size: 30px;
+    text-align: center;
+    color: #404040;
+}
+/* 详细信息的内容板块 2*/
+.infoBoxTwo >ul>li{
+    float: left;
+    height: 400px;
+    width: 400px;
+}
+.smallTitle{
+    margin-left: 70px;
+    color: #9F2C15;
+}
+.infoBoxTwo >ul>li>ul{
+    margin-top: 60px;
+}
+.infoBoxTwo >ul>li>ul>li{
+    margin-top: 10px;
+    margin-left: 60px;
+    color: #747475;
+}
+
+.infoBoxTwo >ul>li>ul>li{
+    line-height: 2;
+    text-indent:2em ;
+    font-size: 20px;
+
+}
+/* 插入的两个图片 */
+.infoMaxBox .insert1{
+    position: absolute;
+    left: 120px;
+    top: 500px;
+    width: 600px;
+    height: 400px;
+    box-shadow: 1px 1px 4px 1px;
+}
+.infoMaxBox .insert2{
+    position: absolute;
+    left: 450px;
+    top: 660px;
+    width: 600px;
+    box-shadow: 1px 1px 4px 1px;
+}
+/* 第三块版心内容 */
+.infoBoxThree{
+    height: 600px;
+    float: left;
+}
+div.secondTitle{
+    text-align: center;
+    color: #9F2C15;
+}
+div .textInfo{
+    position: relative;
+    margin-top:20px ;
+    margin-bottom:150px;
+    /* height: 600px; */
+    line-height: 2;
+    font-size: 20px;
+    color: #747475;
+    padding-left: 100px;
+    /* background-image: url(../res/test1.jpg); */
+    /* background-color: #404040;; */
+
+}
+div .textInfo .headP{
+    font-weight: 700;
+    position: absolute;
+    /* right: 265px; */
+    left: 900px;
+    font-size: 25px;
+    /* text-align: right; */
+    color: black;
+    text-align: right;
+}
+div .textInfo .specialWord{
+    font-size: 30px;
+    font-style: italic;
+    color: #9F2C15;
+}
+div .textInfo p{
+    text-indent: 2em;
+}
+div .textInfo h3
+{
+    color: #9F2C15;
+}
+/* 文字环绕 */
+div .textInfo img{
+    float: right;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 500px;
+    height:360px;
+}
+
+div .textInfo ul li{
+    margin-left: 30px;
+}
+
+.picturecover{
+    width:1200px;
+    height:600px;
+    margin-top:-600px;
+    background-color: rgba(0,0,0,0.5);
+    display: inline-flexbox;
+}
+.catalogue{
+    position: sticky;
+    float: left;
+    top: 0px;
+    left: 10px;
+}
+/* 跳转目录 */
+.catalogue ul{
+    padding-top: 10px;
+    padding-bottom:10px ;
+    background-color: #b7b3b3;
+    border-radius:10px ;
+    width: 190px;
+}
+/* 各个目录的间距 */
+
+.catalogue ul>li{
+    margin-top: 14px;
+    font-family: 'HarmonyOS Sans SC Medium';
+    margin-left: 5px;
+}
+.catalogue ul>li span{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #9F2C15;
+}
+.catalogue ul>li a{
+    /* display: inline-block; */
+    /* line-height: 20px; */
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-decoration:none ;
+    /* color:#404040; */
+    /* color: #fcfcfc; */
+    color: #fff;
+}
+.catalogue ul>li a:hover{
+    color: #9F2C15;
+    font-size: 23px;
+}
+
+/* 从 html 文件夹移植标题栏及图标 */
+.logo {
+    height: 70px;
+    background-color: #9F2C15;
+    display: flex;
+    align-items: center;
+    width: auto;
+    user-select: none;
+      -ms-user-select: none;
+  }
+  
+  .logo a {
+    display: inline-block;
+    color: #e4e4e4;
+    text-decoration: none;
+  }
+  
+  .logo a:hover {
+    color: #ffffff;
+  }
+  
+  .logo span {
+    flex-grow: 1;
+  }
+  .logo h1 {
+    color: #FCFCFC;
+    font-size: 30px;
+    font-family: 'HarmonyOS Sans SC Medium';
+    font-weight: 700;
+    background-image: url(../res/logo.png);
+    background-repeat: no-repeat;
+    background-position: 20px 5px;
+    margin-left: 2em;
+    text-indent:1.5em;
+    display: inline-block;
+  }
+  .contact{
+    font-family: 'HarmonyOS Sans SC Medium';
+    padding-left:auto;
+    display:inline-flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.endline{
+    background-color: rgb(61, 61, 61); 
+    color:#fff;
+    justify-content: center;
+    
+}
+
+.contact li{
+    line-height: 45px;
+    margin: 0 315px 0 315px;
+
+}
+#lul{
+
+    justify-content: flex-start;
+}
+#rul{
+
+    justify-content: flex-end;
+}
+.endline a{
+    background-color: rgb(61, 61, 61); 
+    color:#fff;
+}
+.contact h2{
+    margin-left:auto;
+}
+.footinf{
+    font-family: 'HarmonyOS Sans SC Medium';
+    text-align: center;
+    font-size:12px;
+    line-height: 20px;
+  }
+
+@media (max-width: 900px) {
+    .preferences_card{
+      min-width:120px;
+      min-height:125px;
+    }
+    .preferences li{
+      margin-right:25px;
+    }
+    #routeB{
+      color: #000000;
+      background-position: 1010px 1100px;
+    }
+    .rate,.price{
+      display: none;
+     }
+     .endline{
+      display: none;
+     }
+     #searchbar{
+      display: none;
+     }
+     
+  }
+  @media (min-width: 900px) {
+      .preferences_card{
+        min-width:220px;
+        min-height:225px;
+      }
+      .preferences li{
+          margin-right:125px;
+          font-size:16px;
+        }
+        #routeA{
+           background-position: -108px -40px;
+             }
+             #routeB{
+            
+              color: #fcfcfc !important; 
+              background-position: 750px 1060px;
+             }
+             .small-size-rate{
+              display: none;
+             }
+             #searchbtn{
+              display: none;
+             }
+             .Xendline{
+              display: none;
+             }
+             .endline{
+              display: grid;
+             }
+             
+    }
