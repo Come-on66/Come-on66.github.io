@@ -206,9 +206,10 @@ div .textInfo ul li{
 .catalogue ul{
     padding-top: 10px;
     padding-bottom:10px ;
-    background-color: #b7b3b3;
+    background-color: rgba(183,179,179,0.6);
     border-radius:10px ;
     width: 190px;
+    z-index: 10000;
 }
 /* 各个目录的间距 */
 
@@ -375,4 +376,12 @@ div .textInfo ul li{
     .contus{
         margin-left:210px;
         margin-bottom: 12px;
+    }
+    .catalogue{
+        z-index:10000 !important;
+    }
+    @media (max-width:1450px) {
+        .catalogue{
+            display:none;
+        }
     }

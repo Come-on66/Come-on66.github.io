@@ -199,9 +199,9 @@ div .textInfo ul li{
 .logo {
     height: 70px;
     background-color: #9F2C15;
-    display: flex;
-    align-items: center;
-    width: auto;
+    display: flex !important;
+    align-items: center !important;
+    width: auto !important;
     user-select: none;
       -ms-user-select: none;
   }
@@ -227,9 +227,9 @@ div .textInfo ul li{
     background-image: url(../res/logo.png);
     background-repeat: no-repeat;
     background-position: 20px 5px;
-    margin-left: 2em;
-    text-indent:1.5em;
-    display: inline-block;
+    margin-left: 2em !important;
+    text-indent:1.5em !important;
+    display: inline-block !important;
   }
 #bodypic{
     display:flex;
@@ -414,4 +414,24 @@ height:200px;
 .contus{
     margin-left:210px;
     margin-bottom: 12px;
+}
+
+@media (max-width:1150px)and(min-width:1125px){
+    .route_info:not(.logo):not(.forehead){
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo{
+        width:100%;
+    }
+}
+@media (max-width:1125px){
+    .route_info{
+        display: inline-grid;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
 }

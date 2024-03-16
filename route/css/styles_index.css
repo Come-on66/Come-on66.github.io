@@ -317,3 +317,9 @@ width:auto;
         margin-left:210px;
         margin-bottom: 12px;
     }
+
+    .cardsets{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }

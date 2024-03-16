@@ -1,0 +1,325 @@
+li{
+    list-style-type:none;
+    }
+    
+    .preferences_card{
+    min-width:120px;
+    min-height:125px;
+    height:auto;
+    width:auto;
+    margin-left:auto;
+    margin-bottom:26px;
+    }
+    .subtitle-card{
+        margin-left:15px;
+        
+      
+    }
+    .preferences li{
+        min-width:120px;
+        width:120px;
+        
+        display: inline-grid;
+    }
+    .preferences li a{
+        text-decoration: none;
+    }
+    .preferences{
+        margin-left:50px;
+    }
+    .button_go_top{
+        z-index:1000;
+    }
+    body{
+      overflow-x:hidden;
+  
+    }
+    .logo {
+        height: 70px;
+        /* background-color:#9F2C15; */
+        display: flex;
+        align-items: center;
+        width: auto;
+        user-select: none;
+        -ms-user-select: none;
+      }
+      
+      .logo a:not(h2):not(#maintitle):not(.active):not(.mdui-menu-item) {
+        display: inline-flex;
+        flex-direction: row; 
+        padding: 0 25px;
+        font-size: 20px;
+        font-family: 'HarmonyOS Sans SC Medium';
+        color: #d6d6d6;
+        text-decoration: none;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .logo a:not(h2):not(#maintitle):not(.active):not(.mdui-menu-item):hover{
+        color: #9F2C15;
+      }
+      .logo a.active{
+        color: #ba3419;
+        font-size: 20px;
+        font-family: 'HarmonyOS Sans SC Medium';
+        text-decoration: none;
+        padding: 0 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-flex;
+        flex-direction: row; 
+      }
+      .logo a.active:hover{
+        color: #ba3419;
+      
+      }
+      #maintitle{
+        color: #9F2C15;
+        text-decoration: none;
+      }
+      .logo h1 {
+        color: #9F2C15;
+        font-size: 30px;
+        font-family: 'HarmonyOS Sans SC Medium';
+        font-weight: 700;
+        background-image: url(../res/logo.png);
+        background-repeat: no-repeat;
+        background-position: 20px 5px;
+        text-indent: 2em;
+        display: inline-block;
+        vertical-align: middle;
+        white-space: nowrap;
+
+      }
+      @font-face {
+  font-family: 'HarmonyOS Sans SC Medium';
+  src: url('../res/HarmonyOS_Sans_SC_Medium.eot');
+  src: url('../res/HarmonyOS_Sans_SC_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+  url('../res/HarmonyOS_Sans_SC_Medium.woff2') format('woff2'), /* modern browsers */
+  url('../res/HarmonyOS_Sans_SC_Medium.woff') format('woff'), /* modern browsers */
+  url('../res/HarmonyOS_Sans_SC_Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: medium;
+  font-style: normal;
+  }
+      
+
+@media (max-width: 900px) {
+  .preferences_card{
+    min-width:120px;
+    min-height:125px;
+  }
+  .preferences li{
+    margin-right:25px;
+  }
+  #routeB{
+    color: #000000;
+    background-position: 1010px 1100px;
+  }
+  .rate,.price{
+    display: none;
+   }
+   .endline{
+    display: none;
+   }
+   #searchbar{
+    display: none;
+   }
+   
+}
+@media (min-width: 900px) {
+    .preferences_card{
+      min-width:220px;
+      min-height:225px;
+    }
+    .preferences li{
+        margin-right:125px;
+        font-size:16px;
+      }
+      #routeA{
+         background-position: -108px -40px;
+           }
+           #routeB{
+          
+            color: #fcfcfc !important; 
+            background-position: 750px 1060px;
+           }
+           .small-size-rate{
+            display: none;
+           }
+           #searchbtn{
+            display: none;
+           }
+           .Xendline{
+            display: none;
+           }
+           .endline{
+            display: grid;
+           }
+           
+  }
+  #routeA{
+   background-image: url('../res/shenyang.webp');
+   
+   color: #fcfcfc !important;
+  }
+  #routeB{
+    background-image: url('../res/gannan.jpeg');
+
+   }
+   .rate,.price,.small-size-rate{
+    margin-left:15px;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height:1.5;
+   }
+   .bigpicture .small_title h2{
+    margin-top: 10px;
+}
+.bigpicture{
+    background-image: url(../res/route.jpeg);
+    background-position: 0 -20px;
+    background-size:cover;
+    overflow: hidden;
+    height: 500px;
+    border-radius: 0 0 2% 2%;
+    box-shadow: 0 2px 5px 5px rgba(0,0,0,0.2);
+}
+.small_title{
+    background-color: rgba(0, 0, 0, 0.4);
+    /* float: right; */
+    width: 320px;
+    height: 100px;
+    /* margin: 0; */
+    margin-top: 280px;
+    margin-left: 300px;
+    text-align: center;
+    border-radius: 5%;
+    overflow: hidden;
+    color: #fff;
+    user-select: none;
+    -ms-user-select: none;
+}
+.w{
+    margin:0;
+    width: 1200px;
+    margin:auto;
+    
+  }   
+  .contact{
+    font-family: 'HarmonyOS Sans SC Medium';
+    padding-left:auto;
+    display:inline-flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.endline:not(h2,h3){
+    background-color: rgb(61, 61, 61); 
+    color:#fff;
+    justify-content: center;
+    
+}
+
+.contact li{
+    line-height: 45px;
+    margin: 0 315px 0 315px;
+
+}
+#lul{
+
+    justify-content: flex-start;
+}
+#rul{
+
+    justify-content: flex-end;
+}
+.endline a{
+    background-color: rgb(61, 61, 61); 
+    color:#fff;
+}
+.contact h2{
+    margin-left:auto;
+}
+.footinf{
+    font-family: 'HarmonyOS Sans SC Medium';
+    text-align: center;
+    font-size:12px;
+    line-height: 20px;
+  }
+#searchbar{
+  height:50px;
+width:420px;
+padding:0 25px 0 5px;
+}
+.mdui-textfield{
+margin-top:-10px;
+width:auto;
+}
+
+@media (max-width: 797px){
+.nav{
+  display:none;
+}
+}
+@media (min-width: 797px) and (max-width:850px){
+  .nav{
+    display:inline-flex;}
+    #toggle{
+      display:none !important;
+    }
+  }
+  
+  @media (min-width: 850px) and (max-width:1219px){
+    .nav{
+      display:none;
+    }
+    }
+    @media (min-width: 1219px){
+      .nav{
+        display:inline-flex;
+      }
+      #toggle{
+        display:none !important;
+      }
+      }
+      .mdui-menu-item a{
+        color:#000000 !important;
+        margin: 0 !important;
+        width: 100%;
+      }
+      .mdui-menu{
+        overflow: hidden !important;
+      }
+      @media (min-width:2100px){
+      .cardlines{
+        display:inline-flex;
+        align-content: center;
+        justify-content: center;
+ 
+      }}
+      @media (max-width:1200px){
+        .w{
+        width: auto;}
+      }
+
+      @media (max-width:460px){
+        #maintitle{
+      display:none;}
+      
+      }
+      @media(max-width:740px){
+        .small_title{
+          display:none;
+        }
+      }
+      .contus{
+        margin-left:210px;
+        margin-bottom: 12px;
+    }
+
+    .cardsets{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
